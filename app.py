@@ -5,7 +5,7 @@ from core import BRANDS, load_data, search
 
 st.set_page_config(page_title='저가커피 메뉴 비교', page_icon='☕', layout='wide')
 st.title('☕ 저가커피 메뉴 비교')
-st.caption('컴포즈커피 · 메가MGC커피 · 우지커피 · 빽다방')
+st.caption('컴포즈커피 · 메가MGC커피 · 빽다방')
 st.info('확인된 CSV 자료만 표시합니다. 미확인 항목은 “확인 자료 없음”이며 0점·0원으로 처리하지 않습니다. 가격은 지점·옵션·시점에 따라 달라질 수 있습니다.')
 with st.sidebar:
     st.header('검색 설정')
