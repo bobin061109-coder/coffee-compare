@@ -1,5 +1,6 @@
 import math
 import unicodedata
+from html import escape
 from pathlib import Path
 
 import streamlit as st
@@ -105,22 +106,21 @@ def render_card(row, cheapest):
     color = BRAND_COLORS.get(brand, "#F2B705")
     price = number(row.get("price_krw"))
     is_cheapest = cheapest is not None and price == cheapest
+    badge = "<span style='font-size:0.8rem;color:#16A34A;font-weight:800;margin-left:8px;'>🏷️ 최저가</span>" if is_cheapest else ""
 
     with st.container(border=True):
-        badge = "  🏷️ 최저가" if is_cheapest else ""
-        st.markdown(
-            "<div style='border-left:6px solid " + color + ";padding:2px 0 2px 12px;'>"
+        header = (
+            "<div style='border-left:6px solid " + color + ";padding:2px 0 6px 12px;'>"
             "<div style='font-size:0.8rem;font-weight:700;color:" + color + ";'>"
-            + menu + " <span style='font-size:0.8rem;color:#888;'>" + variant
-            + "</span></div>".replace(menu + " <span", brand + "</div>"
+            + escape(brand) + "</div>"
             "<div style='font-size:1.25rem;font-weight:800;line-height:1.3;color:#222;'>"
-            + menu + " <span")
-            + "<div style='font-size:1.5rem;font-weight:800;color:#E85D04;'>"
-            + price_text(price) + "<span style='font-size:0.85rem;color:#16A34A;"
-            "font-weight:700;'>" + badge + "</span></div>"
-            "</div>",
-            unsafe_allow_html=True,
+            + escape(menu)
+            + " <span style='font-size:0.8rem;color:#888;'>" + escape(variant) + "</span></div>"
+            "<div style='font-size:1.5rem;font-weight:800;color:#E85D04;'>"
+            + escape(price_text(price)) + badge + "</div>"
+            "</div>"
         )
+        st.markdown(header, unsafe_allow_html=True)
         photo = find_photo(brand, menu, variant)
         if photo is not None:
             st.image(photo, use_container_width=True)
