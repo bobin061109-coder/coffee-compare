@@ -5,7 +5,7 @@ import re
 from datetime import date
 from pathlib import Path
 
-BRANDS = ('컴포즈커피', '메가MGC커피', '우지커피', '빽다방')
+BRANDS = ('컴포즈커피', '메가MGC커피', '빽다방')
 METRICS = ('price_krw', 'volume_ml', 'rating', 'taste', 'review')
 COLUMNS = ['brand', 'menu_name', 'variant', 'data_verified', 'verified_at',
            'menu_source_url', 'price_krw', 'price_source_url', 'volume_ml',
