@@ -24,6 +24,12 @@ MIME = {
 
 NA = "확인 자료 없음"
 
+BRAND_COLORS = {
+    "컴포즈커피": "#F2B705",
+    "메가MGC커피": "#E85D04",
+    "빽다방": "#2563EB",
+}
+
 
 def normalize(value):
     return unicodedata.normalize("NFC", str(value)).strip().casefold()
@@ -93,28 +99,39 @@ def pick_menu(name):
 
 
 def render_card(row, cheapest):
+    brand = str(row.get("brand") or "")
+    menu = str(row.get("menu_name") or "")
+    variant = str(row.get("variant") or "")
+    color = BRAND_COLORS.get(brand, "#F2B705")
+    price = number(row.get("price_krw"))
+    is_cheapest = cheapest is not None and price == cheapest
+
     with st.container(border=True):
-        brand = str(row.get("brand") or "")
-        menu = str(row.get("menu_name") or "")
-        variant = str(row.get("variant") or "")
+        badge = "  🏷️ 최저가" if is_cheapest else ""
+        st.markdown(
+            "<div style='border-left:6px solid " + color + ";padding:2px 0 2px 12px;'>"
+            "<div style='font-size:0.8rem;font-weight:700;color:" + color + ";'>"
+            + menu + " <span style='font-size:0.8rem;color:#888;'>" + variant
+            + "</span></div>".replace(menu + " <span", brand + "</div>"
+            "<div style='font-size:1.25rem;font-weight:800;line-height:1.3;color:#222;'>"
+            + menu + " <span")
+            + "<div style='font-size:1.5rem;font-weight:800;color:#E85D04;'>"
+            + price_text(price) + "<span style='font-size:0.85rem;color:#16A34A;"
+            "font-weight:700;'>" + badge + "</span></div>"
+            "</div>",
+            unsafe_allow_html=True,
+        )
         photo = find_photo(brand, menu, variant)
         if photo is not None:
             st.image(photo, use_container_width=True)
         else:
-            st.caption("등록된 이미지가 없습니다")
-        st.caption(brand)
-        st.subheader(menu)
-        st.caption(variant)
-        price = number(row.get("price_krw"))
-        if cheapest is not None and price == cheapest:
-            st.success("최저가")
-        st.subheader(price_text(price))
+            st.caption("📷 등록된 이미지가 없습니다")
         volume = number(row.get("volume_ml"))
         volume_label = NA if volume is None else format(volume, ",.0f") + "mL"
-        st.write("용량: " + volume_label)
-        st.write("평점: " + rating_text(row))
-        st.write("맛 평가: " + str(row.get("taste") or NA))
-        st.write("리뷰: " + str(row.get("review") or NA))
+        st.write("🥤 용량: " + volume_label)
+        st.write("⭐ 평점: " + rating_text(row))
+        st.write("👅 맛 평가: " + str(row.get("taste") or NA))
+        st.write("💬 리뷰: " + str(row.get("review") or NA))
         source_fields = [
             ("메뉴", "menu_source_url", None),
             ("가격", "price_source_url", "price_krw"),
@@ -133,8 +150,25 @@ def render_card(row, cheapest):
         st.caption("확인일 " + str(row.get("verified_at") or NA))
 
 
+st.markdown(
+    """
+<style>
+.stApp {
+  background: linear-gradient(135deg, #FFF3D6 0%, #FFE0C2 50%, #FFD3E0 100%);
+}
+.block-container { max-width: 1120px; padding-top: 2rem; }
+[data-testid="stVerticalBlockBorderWrapper"] {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+</style>
+""",
+    unsafe_allow_html=True,
+)
+
 st.title("☕ 커피픽")
-st.write("컴포즈커피 · 메가MGC커피 · 빽다방, 같은 메뉴를 한눈에 비교해요.")
+st.write("컴포즈커피 · 메가MGC커피 · 빽다방, 같은 메뉴를 한눈에 비교해요!")
 st.info(
     "확인된 CSV 자료만 표시합니다. 미확인 값은 0점·0원이 아닌 '확인 자료 없음'으로 "
     "표시합니다. 가격은 지점·옵션·시점에 따라 달라질 수 있어요."
