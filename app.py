@@ -611,7 +611,7 @@ else:
     if not results:
         empty(
             "🥲",
-            f""{query}" 검색 결과가 없어요",
+            f"{query} 검색 결과가 없어요",
             "다른 메뉴명으로 검색하거나 CSV 자료를 확인해 주세요.",
         )
 
@@ -686,3 +686,6 @@ else:
 
 if warnings:
     with st.expander(f"데이터 확인 안내 
+
+    # 이미지 파일명 처리 수정
+
