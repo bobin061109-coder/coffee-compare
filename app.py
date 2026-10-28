@@ -8,7 +8,7 @@ from core import BRANDS, load_data, search
 
 
 st.set_page_config(
-    page_title="커피픽 · 저가커피 메뉴 비교",
+    page_title="CoffeePick · 저가커피 메뉴 비교",
     page_icon="☕",
     layout="wide",
 )
@@ -154,17 +154,17 @@ st.markdown(
     """
 <style>
 .stApp {
-  background: linear-gradient(160deg, #F5E9D8 0%, #E8D4B8 45%, #C9A27A 100%);
+  background: #F7F1E3;
   color: #3E2723;
 }
 .block-container { max-width: 1120px; padding-top: 2rem; }
 h1, h2, h3, p, label, .stMarkdown { color: #3E2723 !important; }
 
 [data-testid="stVerticalBlockBorderWrapper"] {
-  background: #FFF8EF;
-  border: 1px solid #D8C3A5;
+  background: #FFFDF8;
+  border: 1px solid #E4D8C2;
   border-radius: 22px;
-  box-shadow: 0 6px 20px rgba(111,78,55,0.18);
+  box-shadow: 0 6px 20px rgba(111,78,55,0.14);
 }
 
 .stButton > button, .stLinkButton > a {
@@ -187,11 +187,32 @@ h1, h2, h3, p, label, .stMarkdown { color: #3E2723 !important; }
   box-shadow: 0 0 0 #4E3626 !important;
 }
 
+[data-testid="stHorizontalBlock"] .stButton > button {
+  background: #C9A27A !important;
+  color: #3E2723 !important;
+  box-shadow: 0 4px 0 #A9825B !important;
+}
+[data-testid="stHorizontalBlock"] .stButton > button:hover {
+  background: #D8B890 !important;
+  box-shadow: 0 2px 0 #A9825B !important;
+}
+
 .stTextInput input, div[data-baseweb="select"] > div {
-  background: #FFF8EF !important;
+  background: #FFFDF8 !important;
   color: #3E2723 !important;
   border-radius: 14px !important;
   border: 1px solid #6F4E37 !important;
+}
+
+span[data-baseweb="tag"] {
+  background: #8B5E3C !important;
+  color: #FFF8EF !important;
+}
+span[data-baseweb="tag"] svg { fill: #FFF8EF !important; }
+
+[data-baseweb="radio"] div[aria-checked="true"] > div:first-child {
+  background: #6F4E37 !important;
+  border-color: #6F4E37 !important;
 }
 [data-testid="stMetricValue"], [data-testid="stMetricLabel"] { color: #3E2723 !important; }
 </style>
@@ -199,7 +220,7 @@ h1, h2, h3, p, label, .stMarkdown { color: #3E2723 !important; }
     unsafe_allow_html=True,
 )
 
-st.title("☕ 커피픽")
+st.title("☕ CoffeePick")
 st.write("컴포즈커피 · 메가MGC커피 · 빽다방, 같은 메뉴를 한눈에 비교해요!")
 st.info(
     "확인된 CSV 자료만 표시합니다. 미확인 값은 0점·0원이 아닌 '확인 자료 없음'으로 "
