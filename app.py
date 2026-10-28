@@ -106,17 +106,17 @@ def render_card(row, cheapest):
     color = BRAND_COLORS.get(brand, "#F2B705")
     price = number(row.get("price_krw"))
     is_cheapest = cheapest is not None and price == cheapest
-    badge = "<span style='font-size:0.8rem;color:#16A34A;font-weight:800;margin-left:8px;'>🏷️ 최저가</span>" if is_cheapest else ""
+    badge = "<span style='font-size:0.8rem;color:#4ade80;font-weight:800;margin-left:8px;'>🏷️ 최저가</span>" if is_cheapest else ""
 
     with st.container(border=True):
         header = (
             "<div style='border-left:6px solid " + color + ";padding:2px 0 6px 12px;'>"
             "<div style='font-size:0.8rem;font-weight:700;color:" + color + ";'>"
             + escape(brand) + "</div>"
-            "<div style='font-size:1.25rem;font-weight:800;line-height:1.3;color:#222;'>"
+            "<div style='font-size:1.25rem;font-weight:800;line-height:1.3;color:#f5f5f5;'>"
             + escape(menu)
-            + " <span style='font-size:0.8rem;color:#888;'>" + escape(variant) + "</span></div>"
-            "<div style='font-size:1.5rem;font-weight:800;color:#E85D04;'>"
+            + " <span style='font-size:0.8rem;color:#aaa;'>" + escape(variant) + "</span></div>"
+            "<div style='font-size:1.5rem;font-weight:800;color:#FFD400;'>"
             + escape(price_text(price)) + badge + "</div>"
             "</div>"
         )
@@ -154,13 +154,44 @@ st.markdown(
     """
 <style>
 .stApp {
-  background: linear-gradient(135deg, #FFF3D6 0%, #FFE0C2 50%, #FFD3E0 100%);
+  background: radial-gradient(circle at 20% 10%, #2a2a2a 0%, #111111 55%, #000000 100%);
+  color: #f0f0f0;
 }
 .block-container { max-width: 1120px; padding-top: 2rem; }
+h1, h2, h3, p, label, .stMarkdown { color: #f0f0f0 !important; }
+
 [data-testid="stVerticalBlockBorderWrapper"] {
-  background: #ffffff;
-  border-radius: 18px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  background: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 22px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.5);
+}
+
+.stButton > button, .stLinkButton > a {
+  background: #FFD400 !important;
+  color: #1a1a1a !important;
+  font-weight: 800 !important;
+  border: none !important;
+  border-radius: 999px !important;
+  padding: 0.5rem 1.1rem !important;
+  box-shadow: 0 4px 0 #C9A800 !important;
+  transition: transform .08s ease, box-shadow .08s ease !important;
+}
+.stButton > button:hover, .stLinkButton > a:hover {
+  transform: translateY(2px) !important;
+  box-shadow: 0 2px 0 #C9A800 !important;
+  background: #FFE033 !important;
+}
+.stButton > button:active {
+  transform: translateY(4px) !important;
+  box-shadow: 0 0 0 #C9A800 !important;
+}
+
+.stTextInput input, div[data-baseweb="select"] > div {
+  background: #262626 !important;
+  color: #f0f0f0 !important;
+  border-radius: 14px !important;
+  border: 1px solid #FFD400 !important;
 }
 </style>
 """,
