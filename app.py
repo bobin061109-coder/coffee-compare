@@ -26,9 +26,9 @@ MIME = {
 NA = "확인 자료 없음"
 
 BRAND_COLORS = {
-    "컴포즈커피": "#F2B705",
-    "메가MGC커피": "#E85D04",
-    "빽다방": "#2563EB",
+    "컴포즈커피": "#C8961E",
+    "메가MGC커피": "#A14314",
+    "빽다방": "#5B7FB5",
 }
 
 
@@ -103,20 +103,20 @@ def render_card(row, cheapest):
     brand = str(row.get("brand") or "")
     menu = str(row.get("menu_name") or "")
     variant = str(row.get("variant") or "")
-    color = BRAND_COLORS.get(brand, "#F2B705")
+    color = BRAND_COLORS.get(brand, "#8B5E3C")
     price = number(row.get("price_krw"))
     is_cheapest = cheapest is not None and price == cheapest
-    badge = "<span style='font-size:0.8rem;color:#4ade80;font-weight:800;margin-left:8px;'>🏷️ 최저가</span>" if is_cheapest else ""
+    badge = "<span style='font-size:0.8rem;color:#2E7D32;font-weight:800;margin-left:8px;'>🏷️ 최저가</span>" if is_cheapest else ""
 
     with st.container(border=True):
         header = (
             "<div style='border-left:6px solid " + color + ";padding:2px 0 6px 12px;'>"
             "<div style='font-size:0.8rem;font-weight:700;color:" + color + ";'>"
             + escape(brand) + "</div>"
-            "<div style='font-size:1.25rem;font-weight:800;line-height:1.3;color:#f5f5f5;'>"
+            "<div style='font-size:1.25rem;font-weight:800;line-height:1.3;color:#3E2723;'>"
             + escape(menu)
-            + " <span style='font-size:0.8rem;color:#aaa;'>" + escape(variant) + "</span></div>"
-            "<div style='font-size:1.5rem;font-weight:800;color:#FFD400;'>"
+            + " <span style='font-size:0.8rem;color:#8D6E63;'>" + escape(variant) + "</span></div>"
+            "<div style='font-size:1.5rem;font-weight:800;color:#6F4E37;'>"
             + escape(price_text(price)) + badge + "</div>"
             "</div>"
         )
@@ -154,45 +154,46 @@ st.markdown(
     """
 <style>
 .stApp {
-  background: radial-gradient(circle at 20% 10%, #2a2a2a 0%, #111111 55%, #000000 100%);
-  color: #f0f0f0;
+  background: linear-gradient(160deg, #F5E9D8 0%, #E8D4B8 45%, #C9A27A 100%);
+  color: #3E2723;
 }
 .block-container { max-width: 1120px; padding-top: 2rem; }
-h1, h2, h3, p, label, .stMarkdown { color: #f0f0f0 !important; }
+h1, h2, h3, p, label, .stMarkdown { color: #3E2723 !important; }
 
 [data-testid="stVerticalBlockBorderWrapper"] {
-  background: #1c1c1c;
-  border: 1px solid #333;
+  background: #FFF8EF;
+  border: 1px solid #D8C3A5;
   border-radius: 22px;
-  box-shadow: 0 6px 22px rgba(0,0,0,0.5);
+  box-shadow: 0 6px 20px rgba(111,78,55,0.18);
 }
 
 .stButton > button, .stLinkButton > a {
-  background: #FFD400 !important;
-  color: #1a1a1a !important;
+  background: #6F4E37 !important;
+  color: #FFF8EF !important;
   font-weight: 800 !important;
   border: none !important;
   border-radius: 999px !important;
   padding: 0.5rem 1.1rem !important;
-  box-shadow: 0 4px 0 #C9A800 !important;
+  box-shadow: 0 4px 0 #4E3626 !important;
   transition: transform .08s ease, box-shadow .08s ease !important;
 }
 .stButton > button:hover, .stLinkButton > a:hover {
   transform: translateY(2px) !important;
-  box-shadow: 0 2px 0 #C9A800 !important;
-  background: #FFE033 !important;
+  box-shadow: 0 2px 0 #4E3626 !important;
+  background: #855C40 !important;
 }
 .stButton > button:active {
   transform: translateY(4px) !important;
-  box-shadow: 0 0 0 #C9A800 !important;
+  box-shadow: 0 0 0 #4E3626 !important;
 }
 
 .stTextInput input, div[data-baseweb="select"] > div {
-  background: #262626 !important;
-  color: #f0f0f0 !important;
+  background: #FFF8EF !important;
+  color: #3E2723 !important;
   border-radius: 14px !important;
-  border: 1px solid #FFD400 !important;
+  border: 1px solid #6F4E37 !important;
 }
+[data-testid="stMetricValue"], [data-testid="stMetricLabel"] { color: #3E2723 !important; }
 </style>
 """,
     unsafe_allow_html=True,
