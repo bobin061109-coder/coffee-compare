@@ -1,5 +1,5 @@
-"""하루 1회 공식 공개 페이지의 이벤트 링크를 확인해 data/events.csv로 저장합니다.
-로그인/봇 차단 우회 없이 공개 페이지만 낮은 빈도로 요청합니다.
+"""공개된 공식 브랜드 이벤트 목록에서 상세 링크만 수집합니다.
+수집 실패/페이지 구조 변경 시 기존 CSV를 지우지 않고 Action 로그에 경고합니다.
 """
 import csv
 import hashlib
@@ -7,112 +7,117 @@ import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urljoin, urlparse
+from urllib.parse import parse_qs, urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "data" / "events.csv"
 SOURCES = {
     "컴포즈커피": ("https://composecoffee.com/event", "compose"),
     "메가MGC커피": ("https://www.mega-mgccoffee.com/bbs/?bbs_category=3", "mega"),
-    "우지커피": ("https://oozycoffee.com/index", "oozy"),
     "빽다방": ("https://paikdabang.com/news/?cate=event", "paik"),
 }
 FIELDS = ["id", "brand", "title", "snippet", "url", "checked_at"]
-KEYWORDS = ("이벤트", "프로모션", "할인", "쿠폰", "증정", "응모", "당첨", "혜택", "행사", "EVENT")
-HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; CoffeeCompareEventChecker/1.0)"}
+HEADERS = {"User-Agent": "CoffeeCompareEvents/1.0 (public official page checker)"}
+DETAIL_KEYS = {"bbs_detail", "bbs_detail_id", "bbs_idx", "bbs_no", "wr_id", "idx", "post_id"}
 
 
-def clean(text):
-    text = re.sub(r"\s+", " ", text or "").strip()
-    text = re.sub(r"조회\s*[\d,]+", "", text)
-    text = re.sub(r"\b20\d\d[-./]\d{1,2}[-./]\d{1,2}\b", "", text)
-    return re.sub(r"\s+", " ", text).strip(" ·|-\t")
+def clean(value):
+    return re.sub(r"\\s+", " ", value or "").strip()
 
 
-def is_event(text):
-    return any(k.casefold() in text.casefold() for k in KEYWORDS)
+def is_detail_link(kind, parsed):
+    path = parsed.path.rstrip("/")
+    if kind == "compose":
+        return bool(re.fullmatch(r"/event/\\d+", path))
+    if kind == "paik":
+        return "/post_news/" in path and path.rsplit("/", 1)[-1] not in ("", "event")
+    if kind == "mega":
+        params = parse_qs(parsed.query)
+        has_detail_param = any(key in params and params[key] for key in DETAIL_KEYS)
+        return "/bbs/detail/" in path or has_detail_param
+    return False
 
 
 def parse_page(brand, kind, base_url, html):
     soup = BeautifulSoup(html, "html.parser")
-    out, seen = [], set()
     base_host = urlparse(base_url).netloc.lower()
-    for a in soup.find_all("a", href=True):
-        absolute = urljoin(base_url, a["href"].strip())
+    found, seen = [], set()
+    for anchor in soup.find_all("a", href=True):
+        href = anchor["href"].strip()
+        absolute = urljoin(base_url, href)
         parsed = urlparse(absolute)
-        if parsed.scheme not in ("https", "http"):
+        if parsed.scheme not in ("https", "http") or parsed.netloc.lower() != base_host:
             continue
-        text = clean(a.get_text(" ", strip=True))
-        if kind == "compose":
-            accept = "/event/" in parsed.path and parsed.path.rstrip("/") != "/event"
-        elif kind == "mega":
-            accept = "/bbs/detail/" in parsed.path
-        elif kind == "paik":
-            accept = "/post_news/" in parsed.path
-        else:  # 우지커피 공식 홈페이지가 연결한 공식 SNS 게시물
-            host = parsed.netloc.lower()
-            accept = host.endswith("instagram.com") and ("/p/" in parsed.path or "/reel/" in parsed.path)
-        if not accept or not text or not is_event(text):
+        if not is_detail_link(kind, parsed):
             continue
-        if kind != "oozy" and parsed.netloc.lower() != base_host:
+        title = clean(anchor.get_text(" ", strip=True) or anchor.get("title", ""))
+        if not title or title in {"이벤트", "더보기", "상세보기", "자세히 보기"}:
+            continue
+        if title in {"처음", "마지막", "이전", "다음"} or len(title) < 3:
             continue
         if absolute in seen:
             continue
         seen.add(absolute)
-        digest = hashlib.sha256((brand + "|" + absolute).encode()).hexdigest()[:16]
-        out.append({
-            "id": digest,
+        event_id = hashlib.sha256((brand + "|" + absolute).encode()).hexdigest()[:16]
+        found.append({
+            "id": event_id,
             "brand": brand,
-            "title": text[:180],
-            "snippet": "공식 게시물입니다. 기간·대상·조건은 원문에서 확인해 주세요.",
+            "title": title[:200],
+            "snippet": "공식 사이트 게시물입니다. 진행 여부·기간·참여 조건은 원문에서 확인하세요.",
             "url": absolute,
         })
-    return out
+    return found
 
 
-def read_previous():
+def read_old():
     if not OUT.exists():
         return {}
-    with OUT.open(encoding="utf-8-sig", newline="") as f:
-        return {r.get("id", ""): r for r in csv.DictReader(f) if r.get("id")}
+    try:
+        with OUT.open(encoding="utf-8-sig", newline="") as file:
+            return {row.get("id", ""): row for row in csv.DictReader(file) if row.get("id")}
+    except (OSError, csv.Error, UnicodeError):
+        return {}
 
 
 def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    merged = read_previous()
+    latest = read_old()
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    warnings = []
+    errors = []
     session = requests.Session()
     session.headers.update(HEADERS)
-    for idx, (brand, (url, kind)) in enumerate(SOURCES.items()):
-        if idx:
+
+    for index, (brand, (url, kind)) in enumerate(SOURCES.items()):
+        if index:
             time.sleep(2)
         try:
-            response = session.get(url, timeout=25)
+            response = session.get(url, timeout=30)
             response.raise_for_status()
             items = parse_page(brand, kind, url, response.text)
             if not items:
-                # Markup changes or a temporary partial response must not erase known data.
-                warnings.append(f"{brand}: matching event links not found; old records kept")
+                errors.append(f"{brand}: 상세 이벤트 링크를 찾지 못함(페이지 구조 변경 또는 차단 가능)")
                 continue
-            # A successful nonempty listing is the current snapshot for this brand.
-            merged = {key: row for key, row in merged.items() if row.get("brand") != brand}
+            latest = {key: row for key, row in latest.items() if row.get("brand") != brand}
             for item in items:
                 item["checked_at"] = now
-                merged[item["id"]] = item
-        except Exception as exc:
-            warnings.append(f"{brand}: {type(exc).__name__}: {exc}")
-    rows = sorted(merged.values(), key=lambda r: r.get("checked_at", ""), reverse=True)[:300]
-    with OUT.open("w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=FIELDS)
+                latest[item["id"]] = item
+            print(f"{brand}: {len(items)}개 링크 확인")
+        except requests.RequestException as exc:
+            errors.append(f"{brand}: 요청 실패: {exc}")
+
+    rows = sorted(latest.values(), key=lambda row: row.get("checked_at", ""), reverse=True)[:300]
+    with OUT.open("w", encoding="utf-8-sig", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=FIELDS)
         writer.writeheader()
         writer.writerows(rows)
-    print(f"Saved {len(rows)} records")
-    if warnings:
-        print("Warnings: " + " | ".join(warnings))
+    print(f"저장된 이벤트: {len(rows)}개")
+    for message in errors:
+        print("경고:", message)
+    if not any(row.get("checked_at") == now for row in rows):
+        raise SystemExit("새 공식 이벤트 목록을 하나도 확인하지 못했습니다. Actions 로그를 확인하세요.")
 
 
 if __name__ == "__main__":

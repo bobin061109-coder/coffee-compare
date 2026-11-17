@@ -1,8 +1,13 @@
 name: Refresh official coffee events
 
 on:
+  push:
+    paths:
+      - 'event_scraper.py'
+      - 'requirements.txt'
+      - '.github/workflows/refresh-events.yml'
   schedule:
-    - cron: '15 0 * * *'
+    - cron: '15 0 * * *' # daily around 09:15 KST
   workflow_dispatch:
 
 permissions:
