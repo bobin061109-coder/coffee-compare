@@ -1,527 +1,527 @@
-﻿brand,menu_name,variant,data_verified,verified_at,menu_source_url,price_krw,price_source_url,volume_ml,volume_source_url,rating,rating_scale,rating_source_url,taste,taste_source_url,review,review_source_url
-메가MGC커피,고구마라떼,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3800,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,고구마라떼,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3800,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,곡물라떼,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3800,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,곡물라떼,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3800,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,골드망고스무디,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,꿀아메리카노,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3200,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,녹차,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3000,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,녹차라떼,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3800,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,녹차라떼,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3800,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,녹차프라페,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,디카페인 메가리카노,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3700,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,디카페인 바닐라라떼,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,4400,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,디카페인 바닐라라떼,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,4400,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,디카페인 아메리카노,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,2700,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,디카페인 아메리카노,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,2700,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,디카페인 에스프레소,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,2000,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,디카페인 카라멜마끼아또,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,4900,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,디카페인 카라멜마끼아또,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,4900,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,디카페인 카페라떼,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3900,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,디카페인 카페라떼,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3900,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,디카페인 콜드브루,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,4500,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,디카페인 콜드브루라떼,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,5000,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,딸기바나나주스,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,4000,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,딸기요거트스무디,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,딸기주스,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,4000,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,딸기쿠키프라페,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,딸기퐁크러쉬,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,라이트 바닐라 아몬드라떼,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,라임모히또,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4300,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,레몬에이드,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4000,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,레몬차,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3800,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,리얼초코,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3500,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,리얼초코,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3500,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,리얼초코프라페,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,망고요거트스무디,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,메가리카노,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3800,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,메가에이드,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,민트프라페,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,바나나퐁크러쉬,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3900,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,바닐라라떼,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3900,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,바닐라아메리카노,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3200,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,복숭아아이스티,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3500,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,블루레몬에이드,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4000,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,블루베리요거트스무디,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,사과유자차,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4000,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,아메리카노,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,2200,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,아메리카노,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,2500,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,얼그레이,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3000,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,연유라떼,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,왕메가 헛개리카노,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3900,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,왕할메가커피,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3700,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,유자차,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3800,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,자몽에이드,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4000,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,자몽차,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3800,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,제로 부스트 에이드,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3500,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,청포도에이드,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4000,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,체리콜라,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3800,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,초코허니퐁크러쉬,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3900,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,카라멜마끼아또,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4200,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,카페라떼,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,카페모카,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,카푸치노,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,캐모마일,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3000,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,커피프라페,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,코코넛커피 스무디,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,5300,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,콜드브루,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3500,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,콜드브루라떼,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,4000,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,쿠키프라페,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,큐브라떼,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4700,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,토피넛라떼,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3800,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,토피넛라떼,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3800,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,
-메가MGC커피,페퍼민트,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3000,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,플레인요거트스무디,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,플레인퐁크러쉬,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,할메가커피,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,2600,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,허니자몽블랙티,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4200,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,헛개리카노,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,2900,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,헤이즐넛라떼,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3900,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-메가MGC커피,헤이즐넛아메리카노,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3200,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,
-빽다방,골든 자바칩 스무디,ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4500,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,깔라만시에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3800,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,말차 빽스치노(베이직),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,말차 빽스치노(소프트),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4300,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,달달연유라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,3700,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,달달연유라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3700,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,더블에스프레소,전체,True,2026-10-28,https://www.olmanama.com/brand_104,1700,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,디카페인 연유라떼,ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,디카페인 콜드브루,ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4000,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,디카페인 콜드브루라떼,ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4500,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,딸기라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3800,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,딸기바나나 빽스치노(베이직),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,딸기바나나 빽스치노(소프트),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4300,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,딸기요거트스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4300,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,딸기주스,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4300,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,레모네이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,말차라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,3800,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,말차라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3800,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,망고스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3800,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,미숫가루 두유,전체,True,2026-10-28,https://www.olmanama.com/brand_104,4500,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,미숫가루 물,전체,True,2026-10-28,https://www.olmanama.com/brand_104,3000,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,미숫가루 우유,전체,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,민트초코 빽스치노(베이직),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,민트초코 빽스치노(소프트),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4300,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,민트초코라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,민트초코라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,밀크쉐이크,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,바나나라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,바나나라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,바나나밀크쉐이크,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4300,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,바나나커피쉐이크,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4900,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,바닐라라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,3700,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,바닐라라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3700,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,복숭아 소다,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3800,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,복숭아에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,블랙벨벳 자바칩 빽스치노,베이직,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4000,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,블랙벨벳 자바칩 빽스치노,소프트,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4500,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,블루베리요거트스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,5300,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,블루베리주스,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4800,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,빽사이즈 딸기라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,5000,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,빽사이즈 식혜,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4300,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,수박망고아이스티,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,6500,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,식혜,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,2700,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,쌍화라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,쌍화라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,아메리카노,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,1700,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,아메리카노,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,2000,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,아샷추(아이스티+샷추가),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3000,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,아이스크림 카페라떼,ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4000,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,아이스크림 카페모카,ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4500,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,아이스티,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,2800,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,애플스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,우리수박주스,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,원조 빽스치노(베이직),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3300,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,원조 빽스치노(소프트),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,원조커피,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,2500,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,원조커피,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,2500,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,유자에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,율무라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,3300,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,율무라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3300,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,자두스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,자몽에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,자몽티,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,제로슈거 레모네이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,제로슈거 자몽에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,청포도에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,청포도플라워,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,체리콕콕,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,초코라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,4300,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,초코라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4800,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,초코바나나 빽스치노(베이직),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,초코바나나 빽스치노(소프트),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4300,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,카페라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,3200,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,카페라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3200,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,코코넛커피스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,5000,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,콜드브루,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,콜드브루,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,콜드브루라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,4500,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,콜드브루라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4500,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,콤부차 샤인머스캣,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3300,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,쿠키크런치 빽스치노(베이직),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,쿠키크런치 빽스치노(소프트),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4300,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,플레인요거트스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,피스타치오정글 빽스치노(베이직),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,헤이즐넛라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,3700,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,헤이즐넛라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3700,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,호지차라떼,HOT,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,호지차라떼,ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,
-빽다방,흑당라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,5500,https://www.olmanama.com/brand_104,,,,,,,,,
-빽다방,흑당라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,5500,https://www.olmanama.com/brand_104,,,,,,,,,
-컴포즈커피,고구마라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,곡물라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3300,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,국내산 딸기주스,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4300,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,그레인 바나나 주스,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,그린티라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,그린티프라페,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4000,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,꿀 토마토 주스,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,꿀아메리카노,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2300,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,너티 크림 라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2900,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,논산에서 온 수박 주스,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3900,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,달고나라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4000,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,대추차,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2900,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,더블초코라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,돌체라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,디카페인 돌체라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,디카페인 바닐라라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4300,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,디카페인 아메리카노,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,디카페인 카페라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3900,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,디카페인 콜드브루,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,디카페인 콜드브루 라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4000,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,디카페인 헤이즐넛라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4300,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,딸기라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,딸기생초콜릿라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,딸기스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,딸기요거트스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4000,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,딸기치즈케이크스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4900,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,레몬에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,망고 자몽 요거빙,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3900,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,망고라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,망고에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,망고요거트스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4000,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,매실차,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2900,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,모카자바칩프라페,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,밀크티,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,바닐라 크림 라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2900,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,바닐라라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3300,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,벨장 생초콜릿 라떼,ICE,True,2026-10-29,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,복숭아 캐모마일 티브리즈,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,2900,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,부여밤라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,블랙벨벳 라떼,HOT,True,2026-10-29,https://www.olmanama.com/brand_110,3900,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,블랙벨벳 라떼,ICE,True,2026-10-29,https://www.olmanama.com/brand_110,3900,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,블랙퍼스트,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,블루레몬에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,블루베리라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,블루베리스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,빅포즈 돌체라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,5400,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,빅포즈 디카페인 아메리카노,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4000,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,빅포즈 바닐라라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4900,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,빅포즈 솔티드 쿨 리치,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4100,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,빅포즈 아메리카노,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3000,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,빅포즈 아샷추,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4400,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,빅포즈 카페라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,빅포즈 파인애플 커피,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4900,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,빅포즈 헤이즐넛라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4900,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,상하목장 아이스크림,ICE,True,2026-10-29,https://www.olmanama.com/brand_110,2500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,생초콜릿라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,샤인머스캣 에이드,ICE,True,2026-10-29,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,솔티드 카라멜 아이스크림 라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,솔티드 쿨 리치,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,2500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,스위트콘 프라페,ICE,True,2026-10-29,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,쌍화차,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2900,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,아망추,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,아메리카노,전체,True,2026-10-28,https://www.olmanama.com/brand_110,1800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,아샷추,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,아이스크림 모카,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,아이스크림 아인슈페너,ICE,True,2026-10-29,https://www.olmanama.com/brand_110,4800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,아이스크림 초코라떼,ICE,True,2026-10-29,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,아이스크림 카페라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4700,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,아이스티,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3000,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,아인슈페너라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4200,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,아포가토,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,에스프레소,전체,True,2026-10-28,https://www.olmanama.com/brand_110,1500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,에어리 아메리카노,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2300,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,연유 수박 팥빙,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3900,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,오렌지당근주스,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,유자에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,자몽에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,자몽허니블랙티,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,저당 복숭아 스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3600,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,제주 한라봉 스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3600,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,제주 한라봉 자몽 에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3200,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,청귤생강차,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,청포도에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,카라멜마끼아또,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3300,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,카페라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2900,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,카페모카,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,카푸치노,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2900,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,캔디소다밀크쉐이크,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4200,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,커피밀크쉐이크,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,컴포즈믹스커피,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2300,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,콜드브루,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3300,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,콜드브루 라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,쿠키밀크쉐이크,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,쿠키초코라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,쿠키초코프라페,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4000,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,키위주스,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,파인애플 커피,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3300,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,플레인밀크쉐이크,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4200,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,플레인요거트스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4000,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,허니레몬티,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,허니유자티,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,허니자몽티,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,허브티 캐모마일,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,허브티 페퍼민트,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,헤이즐넛라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3300,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,홍차 얼그레이,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,흑당 버블 카페라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,흑당 카페라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,흑당라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,
-컴포즈커피,히비스커스,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2500,https://www.olmanama.com/brand_110,,,,,,,,,
-빽다방,시그니처 딥크림라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,510,https://paikdabang.com/menu/menu_new/,,,,,,,
-빽다방,시그니처 딥크림라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,660,https://paikdabang.com/menu/menu_new/,,,,,,,
-빽다방,디카페인 시그니처 딥크림라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,510,https://paikdabang.com/menu/menu_new/,,,,,,,
-빽다방,디카페인 시그니처 딥크림라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,660,https://paikdabang.com/menu/menu_new/,,,,,,,
-빽다방,스몰사이즈 시그니처 딥크림라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,440,https://paikdabang.com/menu/menu_new/,,,,,,,
-빽다방,디카페인 스몰사이즈 시그니처 딥크림라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,440,https://paikdabang.com/menu/menu_new/,,,,,,,
-빽다방,우바홍차,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,우바홍차,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,리치루이보스티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,리치루이보스티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,자몽블랙티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,자몽블랙티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,레몬블랙티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,레몬블랙티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,사과유자티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,사과유자티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-메가MGC커피,딥 초코 체리 프라페,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,쫀득 모찌 밀크티,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,매실 모과차,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,매실 모과차,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,나 혼자만 드랍 UP! 은랑 큐브 레몬에이드,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,"음, 괜찮은 휴식이군 블레이드 초코크림커피",ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,무카페인 오르조라떼,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,무카페인 오르조라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-빽다방,씨앗호떡라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,510,https://paikdabang.com/menu/menu_new/,,,,,,,
-빽다방,씨앗호떡라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,660,https://paikdabang.com/menu/menu_new/,,,,,,,
-빽다방,씨앗호떡빽스치노 (베이직),전체,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,660,https://paikdabang.com/menu/menu_new/,,,,,,,
-빽다방,씨앗호떡빽스치노 (소프트),전체,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,660,https://paikdabang.com/menu/menu_new/,,,,,,,
-빽다방,씨앗호떡 소프트,전체,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,440,https://paikdabang.com/menu/menu_new/,,,,,,,
-빽다방,씨앗호떡 요거트아이스크림,전체,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,440,https://paikdabang.com/menu/menu_new/,,,,,,,
-빽다방,챔피언스 블랙 벨벳 라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,챔피언스 블랙 벨벳 라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 챔피언스 블랙 벨벳 라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 챔피언스 블랙 벨벳 라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,에어폼 아메리카노,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 더블에스프레소,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,60,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 아메리카노,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 아메리카노,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,아이스티샷 망고추가(아샷망추),전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 아이스티샷추가(아샷추),전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 아이스티샷 망고추가(아샷망추),전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,코코넛카페라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,코코넛카페라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 코코넛카페라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 코코넛카페라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 코코넛커피스무디,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,꿀아메리카노,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,꿀아메리카노,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 꿀아메리카노,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 꿀아메리카노,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,헤이즐넛아메리카노,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,헤이즐넛아메리카노,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 헤이즐넛 아메리카노,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 헤이즐넛 아메리카노,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 헤이즐넛라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 헤이즐넛라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 카페라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 카페라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,흑당버블 카페라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 흑당버블 카페라떼,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 바닐라라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 바닐라라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,카페모카,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,카페모카,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 카페모카,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 카페모카,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,카라멜마키아또,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,카라멜마키아또,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 카라멜 마키아또,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 카라멜 마키아또,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,바나나 카페라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,바나나 카페라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 바나나카페라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 바나나카페라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 바나나커피쉐이크,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,아이스크림바닐라라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 아이스크림 카페라떼,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 아이스크림 바닐라라떼,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 아이스크림카페모카,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,크리미 콜드브루 바닐라,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,크리미 콜드브루 카라멜,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 크리미 콜드브루 바닐라,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 크리미 콜드브루 카라멜,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,콜드브루 연유라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,콜드브루 연유라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 콜드브루 연유라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 콜드브루 연유라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,콜드브루 흑당라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,콜드브루 흑당라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 콜드브루 흑당라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 콜드브루 흑당라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,빽사이즈 아메리카노,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,빽사이즈 카페라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 빽사이즈 아메리카노,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 빽사이즈 카페라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,빽사이즈 원조커피,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,빽사이즈 바닐라라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 빽사이즈 바닐라라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,빽사이즈 아이스티샷추가,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,빽사이즈 아이스티샷 망고추가,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 빽사이즈 아이스티샷추가,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,디카페인 빽사이즈 아이스티샷 망고추가,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,
-빽다방,꿀밤라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,블랙 벨벳 말차라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,블랙 벨벳 말차라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,포도주스,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,복숭아주스,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,골드 키위 주스,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,김천 자두 주스,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,사과젤리 리치스무디,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,사과젤리 복숭아스무디,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,사과젤리 청포도스무디,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,저당사과젤리 매실티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,저당사과젤리 매실에이드,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,제로슈거 매실티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,제로슈거 매실티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,제로슈거 납작복숭아 아이스티,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,제로슈거 납작복숭아 아.샷.추,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,제로슈거 레몬티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,제로슈거 레몬티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,제로슈거 자몽티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,제로슈거 자몽티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,딸기복숭아 루이보스티,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,딸기앤쿠키 쉐이크,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,우리사과주스,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,사과당근주스,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,생강차,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,생강차,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,율무아몬드라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,율무아몬드라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,메리 더블넛츠 초코라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,애사비,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,블루레몬에이드,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,아망추 (아이스티 + 망고추가),전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,파인애플스무디,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,패션후르츠스무디,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,망고패션스무디,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,뱅쇼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,뱅쇼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,우리쌀라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,우리쌀라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,대추차,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,대추차,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,쌍화차,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,쌍화차,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,대추라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,아임파인민트티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,아임파인민트티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,쿨라임스무디,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,쿨라임에이드,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,수정과,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,수정과,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,고구마라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,고구마라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,꿀밤라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,꿀밤스무디,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,고구마스무디,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,퐁당치노(바닐라),전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,퐁당치노(원조커피),전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,퐁당치노(미숫가루),전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,토피넛라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,토피넛라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,밀크티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,밀크티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,흑당버블 밀크티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,페퍼민트티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,페퍼민트티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,황금캐모마일티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,황금캐모마일티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,레몬티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,레몬티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,피치우롱스위티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,피치우롱스위티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,우롱티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,우롱티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,유자티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,유자티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,딸기에이드,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,파인애플 주스,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,토마토 주스,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,망고 주스,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,빽사이즈 미숫가루,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,990,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,빽사이즈 초코라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,990,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,빽사이즈 달콤아이스티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,990,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,빽사이즈 아망추,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,990,https://paikdabang.com/menu/menu_drink/,,,,,,,
-빽다방,블랙 벨벳 자바칩빽스치노 소프트,전체,True,2026-11-18,https://paikdabang.com/menu/menu_ccino/,,,660,https://paikdabang.com/menu/menu_ccino/,,,,,,,
-빽다방,디카페인 블랙 벨벳 자바칩빽스치노,전체,True,2026-11-18,https://paikdabang.com/menu/menu_ccino/,,,660,https://paikdabang.com/menu/menu_ccino/,,,,,,,
-빽다방,디카페인 블랙 벨벳 자바칩빽스치노 소프트,전체,True,2026-11-18,https://paikdabang.com/menu/menu_ccino/,,,660,https://paikdabang.com/menu/menu_ccino/,,,,,,,
-빽다방,딸기 빽스치노(BASIC),전체,True,2026-11-18,https://paikdabang.com/menu/menu_ccino/,,,660,https://paikdabang.com/menu/menu_ccino/,,,,,,,
-빽다방,딸기 빽스치노(SOFT),전체,True,2026-11-18,https://paikdabang.com/menu/menu_ccino/,,,660,https://paikdabang.com/menu/menu_ccino/,,,,,,,
-빽다방,초코빽스치노(BASIC),전체,True,2026-11-18,https://paikdabang.com/menu/menu_ccino/,,,660,https://paikdabang.com/menu/menu_ccino/,,,,,,,
-빽다방,초코빽스치노(SOFT),전체,True,2026-11-18,https://paikdabang.com/menu/menu_ccino/,,,660,https://paikdabang.com/menu/menu_ccino/,,,,,,,
-메가MGC커피,하우스밀크 라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,저당 골든애플 블랙티,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,ARIH 듀얼바이오틱 소다 레드 루비 갈로어,전체,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,ARIH 듀얼바이오틱 소다 포지티브 오렌지,전체,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,ARIH 듀얼바이오틱 소다 클리어레몬,전체,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,ARIH 듀얼바이오틱 소다 피치망고 호라이즌,전체,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,ARIH 포스트바이오틱 에너지 드링크 레몬크레스트,전체,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,ARIH 포스트바이오틱 에너지 드링크 오렌지아워,전체,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,ARIH 포스트바이오틱 에너지 드링크 트로피칼웨이브,전체,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,저당 꿀배 XO야쿠르트,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,딸기라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,밀크쉐이크,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,유자생강차,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,초코젤라또 말차라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,골드키위주스,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,귤 톡톡 젤리스무디,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,왕메가카페라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 왕메가카페라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 라이트 바닐라 아몬드라떼,전체,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,왕메가사과유자,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 헛개리카노,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 헛개리카노,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 왕메가헛개리카노,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,상큼 리치티,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,상큼 리치티,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,할메가미숫커피,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,왕메가초코,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,946,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,
-메가MGC커피,왕메가아이스티,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,946,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,
-메가MGC커피,제로 복숭아 아이스티,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 꿀아메리카노,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 헤이즐넛 아메리카노,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 바닐라 아메리카노,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 카푸치노,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 헤이즐넛 라떼,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 연유라떼,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 카페모카,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 꿀아메리카노,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 헤이즐넛 아메리카노,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 바닐라 아메리카노,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 카푸치노,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 헤이즐넛 라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 연유라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,디카페인 카페모카,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,에스프레소,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,에스프레소 도피오,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,오레오초코라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,흑당버블밀크티라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,핫초코,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,로얄밀크티라떼,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,흑당라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,흑당밀크티라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,흑당버블라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,아이스초코,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,로얄밀크티라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
-메가MGC커피,자몽 톡톡 스무디,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,
+﻿brand,menu_name,variant,data_verified,verified_at,menu_source_url,price_krw,price_source_url,volume_ml,volume_source_url,rating,rating_scale,rating_source_url,taste,taste_source_url,review,review_source_url,caffeine_mg,kcal,released_at
+메가MGC커피,고구마라떼,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3800,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,0.0,339.4,2024-06-10
+메가MGC커피,고구마라떼,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3800,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,0.0,284.9,2024-06-10
+메가MGC커피,곡물라떼,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3800,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,0.0,434.5,2024-06-10
+메가MGC커피,곡물라떼,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3800,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,0.0,418.2,2024-06-10
+메가MGC커피,골드망고스무디,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,218.0,2024-06-10
+메가MGC커피,꿀아메리카노,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3200,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,236.0,201.5,2024-06-10
+메가MGC커피,녹차,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3000,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,30.6,13.4,2024-06-10
+메가MGC커피,녹차라떼,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3800,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,82.9,288.1,2024-06-10
+메가MGC커피,녹차라떼,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3800,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,94.2,292.3,2024-06-10
+메가MGC커피,녹차프라페,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,158.2,546.6,2026-03-18
+메가MGC커피,디카페인 메가리카노,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3700,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,11.7,22.0,2024-06-10
+메가MGC커피,디카페인 바닐라라떼,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,4400,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,7.8,239.7,2024-06-10
+메가MGC커피,디카페인 바닐라라떼,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,4400,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,7.8,248.5,2024-06-10
+메가MGC커피,디카페인 아메리카노,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,2700,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,7.8,14.6,2024-06-10
+메가MGC커피,디카페인 아메리카노,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,2700,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,7.8,14.6,2024-06-12
+메가MGC커피,디카페인 에스프레소,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,2000,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,3.9,7.3,2024-06-10
+메가MGC커피,디카페인 카라멜마끼아또,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,4900,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,7.8,252.8,2024-06-10
+메가MGC커피,디카페인 카라멜마끼아또,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,4900,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,7.8,237.6,2024-06-10
+메가MGC커피,디카페인 카페라떼,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3900,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,7.8,193.4,2024-06-10
+메가MGC커피,디카페인 카페라떼,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3900,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,7.8,164.1,2024-06-10
+메가MGC커피,디카페인 콜드브루,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,4500,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,6.5,9.8,2024-06-10
+메가MGC커피,디카페인 콜드브루라떼,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,5000,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,6.5,152.8,2024-06-10
+메가MGC커피,딸기바나나주스,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,4000,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,0.0,296.5,2024-06-10
+메가MGC커피,딸기요거트스무디,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,443.6,2024-06-10
+메가MGC커피,딸기주스,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,4000,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,0.0,242.2,2024-06-10
+메가MGC커피,딸기쿠키프라페,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,589.5,2024-06-10
+메가MGC커피,딸기퐁크러쉬,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,607.8,2024-06-10
+메가MGC커피,라이트 바닐라 아몬드라떼,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,236.0,83.2,2024-07-03
+메가MGC커피,라임모히또,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4300,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,257.2,2024-06-10
+메가MGC커피,레몬에이드,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4000,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,223.6,2024-06-10
+메가MGC커피,레몬차,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3800,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,260.6,2024-06-10
+메가MGC커피,리얼초코,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3500,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,3.5,599.3,2024-06-10
+메가MGC커피,리얼초코,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3500,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,3.5,599.3,2024-06-10
+메가MGC커피,리얼초코프라페,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,3.5,599.3,2024-06-10
+메가MGC커피,망고요거트스무디,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,388.6,2024-06-10
+메가MGC커피,메가리카노,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3800,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,354.0,24.2,2024-06-10
+메가MGC커피,메가에이드,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,259.5,2024-06-10
+메가MGC커피,민트프라페,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,666.0,2024-06-10
+메가MGC커피,바나나퐁크러쉬,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3900,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,0.0,673.0,2024-06-10
+메가MGC커피,바닐라라떼,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3900,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,236.0,250.0,2024-06-10
+메가MGC커피,바닐라아메리카노,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3200,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,236.0,87.5,2024-06-10
+메가MGC커피,복숭아아이스티,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3500,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,24.0,240.1,2024-06-10
+메가MGC커피,블루레몬에이드,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4000,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,270.1,2024-06-10
+메가MGC커피,블루베리요거트스무디,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,542.3,2025-03-20
+메가MGC커피,사과유자차,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4000,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,227.1,2024-06-10
+메가MGC커피,아메리카노,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,2200,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,236.0,16.1,2024-06-10
+메가MGC커피,아메리카노,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,2500,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,236.0,16.1,2024-06-10
+메가MGC커피,얼그레이,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3000,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,50.4,5.4,2024-06-10
+메가MGC커피,연유라떼,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,236.0,319.1,2024-06-10
+메가MGC커피,왕메가 헛개리카노,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3900,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,354.0,66.2,2025-03-20
+메가MGC커피,왕할메가커피,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3700,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,279.5,409.6,2024-06-10
+메가MGC커피,유자차,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3800,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,253.4,2024-06-10
+메가MGC커피,자몽에이드,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4000,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,208.3,2026-03-18
+메가MGC커피,자몽차,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3800,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,245.0,2024-06-10
+메가MGC커피,제로 부스트 에이드,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3500,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,10.5,2025-03-20
+메가MGC커피,청포도에이드,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4000,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,341.2,2024-06-10
+메가MGC커피,체리콜라,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3800,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,24.0,313.9,2026-01-12
+메가MGC커피,초코허니퐁크러쉬,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3900,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,2.1,663.1,2024-06-10
+메가MGC커피,카라멜마끼아또,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4200,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,236.0,254.3,2024-06-10
+메가MGC커피,카페라떼,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,236.0,186.6,2024-06-10
+메가MGC커피,카페모카,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,237.9,397.2,2024-06-10
+메가MGC커피,카푸치노,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,236.0,162.4,2024-06-10
+메가MGC커피,캐모마일,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3000,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,8.4,2024-06-10
+메가MGC커피,커피프라페,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,236.0,461.6,2024-06-10
+메가MGC커피,코코넛커피 스무디,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,5300,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,236.0,700.1,2024-06-10
+메가MGC커피,콜드브루,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3500,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,157.5,9.0,2024-06-10
+메가MGC커피,콜드브루라떼,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,4000,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,157.5,152.0,2024-06-10
+메가MGC커피,쿠키프라페,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,759.8,2024-06-10
+메가MGC커피,큐브라떼,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4700,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,393.3,329.9,2024-06-10
+메가MGC커피,토피넛라떼,HOT,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3800,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,49.3,399.7,2024-06-10
+메가MGC커피,토피넛라떼,ICE,True,2026-10-29,https://www.mega-mgccoffee.com/menu/menu_list.php,3800,https://www.mega-mgccoffee.com/menu/menu_list.php,,,,,,,,,,49.3,379.1,2024-06-10
+메가MGC커피,페퍼민트,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3000,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,7.8,2024-06-10
+메가MGC커피,플레인요거트스무디,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,543.6,2024-06-12
+메가MGC커피,플레인퐁크러쉬,ICE,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4400,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,0.0,547.4,2024-06-10
+메가MGC커피,할메가커피,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,2600,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,176.5,258.7,2024-06-10
+메가MGC커피,허니자몽블랙티,HOT,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,4200,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,37.2,249.1,2024-06-10
+메가MGC커피,헛개리카노,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,2900,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,,41.3,2025-03-20
+메가MGC커피,헤이즐넛라떼,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3900,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,236.0,233.2,2024-06-10
+메가MGC커피,헤이즐넛아메리카노,전체,True,2026-10-28,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,3200,https://menufans.com/ko-KR/brands/%EB%A9%94%EA%B0%80MGC%EC%BB%A4%ED%94%BC,,,,,,,,,,236.0,70.7,2024-06-10
+빽다방,골든 자바칩 스무디,ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4500,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,,,2025-11-01
+빽다방,깔라만시에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3800,https://www.olmanama.com/brand_104,,,,,,,,,,0.00,215.04,2018-06-01
+빽다방,말차 빽스치노(베이직),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,249.94,547.81,2018-05-01
+빽다방,말차 빽스치노(소프트),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4300,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,260,755,2018-05-01
+빽다방,달달연유라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,3700,https://www.olmanama.com/brand_104,,,,,,,,,,187,405,2018-05-01
+빽다방,달달연유라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3700,https://www.olmanama.com/brand_104,,,,,,,,,,164,382,2018-05-01
+빽다방,더블에스프레소,전체,True,2026-10-28,https://www.olmanama.com/brand_104,1700,https://www.olmanama.com/brand_104,,,,,,,,,,269,18,2018-05-01
+빽다방,디카페인 연유라떼,ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,164,382,2018-05-01
+빽다방,디카페인 콜드브루,ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4000,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,12.4,16.7,2018-05-01
+빽다방,디카페인 콜드브루라떼,ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4500,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,12.0,184.9,2018-01-01
+빽다방,딸기라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3800,https://www.olmanama.com/brand_104,,,,,,,,,,,301,2022-02-01
+빽다방,딸기바나나 빽스치노(베이직),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,0,500,2018-05-01
+빽다방,딸기바나나 빽스치노(소프트),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4300,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,0,685,2018-05-01
+빽다방,딸기요거트스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4300,https://www.olmanama.com/brand_104,,,,,,,,,,,454,2018-05-01
+빽다방,딸기주스,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4300,https://www.olmanama.com/brand_104,,,,,,,,,,0.00,223.94,2018-05-01
+빽다방,레모네이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,,0,246,2018-06-01
+빽다방,말차라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,3800,https://www.olmanama.com/brand_104,,,,,,,,,,130.5,481.6,2018-06-01
+빽다방,말차라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3800,https://www.olmanama.com/brand_104,,,,,,,,,,104.4,354.6,2018-06-01
+빽다방,망고스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3800,https://www.olmanama.com/brand_104,,,,,,,,,,0,,2025-04-01
+빽다방,미숫가루 두유,전체,True,2026-10-28,https://www.olmanama.com/brand_104,4500,https://www.olmanama.com/brand_104,,,,,,,,,,0.00,334.98,2018-06-01
+빽다방,미숫가루 물,전체,True,2026-10-28,https://www.olmanama.com/brand_104,3000,https://www.olmanama.com/brand_104,,,,,,,,,,0.00,334.98,2018-06-01
+빽다방,미숫가루 우유,전체,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,,0.00,334.98,2018-06-01
+빽다방,민트초코 빽스치노(베이직),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,48.1,634.4,2018-05-01
+빽다방,민트초코 빽스치노(소프트),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4300,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,48.1,808.3,2018-05-01
+빽다방,민트초코라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,,45,655.3,2018-06-01
+빽다방,민트초코라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,,35.7,514.5,2018-06-01
+빽다방,밀크쉐이크,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,,,535,2018-05-01
+빽다방,바나나라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,,,,2023-03-01
+빽다방,바나나라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,,,,2023-03-01
+빽다방,바나나밀크쉐이크,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4300,https://www.olmanama.com/brand_104,,,,,,,,,,0,450.2,2023-03-01
+빽다방,바나나커피쉐이크,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4900,https://www.olmanama.com/brand_104,,,,,,,,,,89.5,461.2,2023-03-01
+빽다방,바닐라라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,3700,https://www.olmanama.com/brand_104,,,,,,,,,,168,380,2018-05-01
+빽다방,바닐라라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3700,https://www.olmanama.com/brand_104,,,,,,,,,,156,372,2018-05-01
+빽다방,복숭아 소다,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3800,https://www.olmanama.com/brand_104,,,,,,,,,,0,512.5,2026-07-01
+빽다방,복숭아에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,,,241,2018-05-01
+빽다방,블랙벨벳 자바칩 빽스치노,베이직,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4000,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,242,489.3,2026-09-01
+빽다방,블랙벨벳 자바칩 빽스치노,소프트,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4500,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,242,489.3,2026-09-01
+빽다방,블루베리요거트스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,5300,https://www.olmanama.com/brand_104,,,,,,,,,,0,599.6,2023-04-01
+빽다방,블루베리주스,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4800,https://www.olmanama.com/brand_104,,,,,,,,,,0,,2023-04-01
+빽다방,빽사이즈 딸기라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,5000,https://www.olmanama.com/brand_104,,,,,,,,,,,510,2025-08-01
+빽다방,빽사이즈 식혜,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4300,https://www.olmanama.com/brand_104,,,,,,,,,,,504,2025-08-01
+빽다방,수박망고아이스티,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,6500,https://www.olmanama.com/brand_104,,,,,,,,,,10.9,450.9,2026-07-01
+빽다방,식혜,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,2700,https://www.olmanama.com/brand_104,,,,,,,,,,0.0,318.2,2022-05-01
+빽다방,쌍화라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,,,349.50,2025-01-01
+빽다방,쌍화라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,,,378.19,2025-01-01
+빽다방,아메리카노,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,1700,https://www.olmanama.com/brand_104,,,,,,,,,,197,4,2018-05-01
+빽다방,아메리카노,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,2000,https://www.olmanama.com/brand_104,,,,,,,,,,166,4,2018-05-01
+빽다방,아샷추(아이스티+샷추가),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3000,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,100,272,2018-01-01
+빽다방,아이스크림 카페라떼,ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4000,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,176,357,2022-05-01
+빽다방,아이스크림 카페모카,ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4500,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,309,492,2022-05-01
+빽다방,아이스티,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,2800,https://www.olmanama.com/brand_104,,,,,,,,,,20.2,256.6,2018-06-01
+빽다방,애플스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,,0,325.5,2026-07-01
+빽다방,우리수박주스,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,,,262,2018-05-01
+빽다방,원조 빽스치노(베이직),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3300,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,233,673.7,2018-05-01
+빽다방,원조 빽스치노(소프트),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,233,847.6,2018-05-01
+빽다방,원조커피,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,2500,https://www.olmanama.com/brand_104,,,,,,,,,,345,615.7,2018-05-01
+빽다방,원조커피,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,2500,https://www.olmanama.com/brand_104,,,,,,,,,,346,633.8,2018-05-01
+빽다방,유자에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,,,251,2018-06-01
+빽다방,율무라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,3300,https://www.olmanama.com/brand_104,,,,,,,,,,0,425,2025-12-01
+빽다방,율무라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3300,https://www.olmanama.com/brand_104,,,,,,,,,,0,402,2025-12-01
+빽다방,자두스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,,0,292.8,2026-07-01
+빽다방,자몽에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,,0,257.5,2018-06-01
+빽다방,자몽티,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,,0,238.39,2018-06-01
+빽다방,제로슈거 레모네이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,,0.0,111.4,2026-03-01
+빽다방,제로슈거 자몽에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,,0.0,111.9,2026-03-01
+빽다방,청포도에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,,0,233.70,2018-06-01
+빽다방,청포도플라워,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,,0,240.06,2018-06-01
+빽다방,체리콕콕,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,,23,,2023-03-01
+빽다방,초코라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,4300,https://www.olmanama.com/brand_104,,,,,,,,,,15.78,337.57,2018-06-01
+빽다방,초코라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4800,https://www.olmanama.com/brand_104,,,,,,,,,,15.76,387.48,2018-06-01
+빽다방,초코바나나 빽스치노(베이직),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,27.1,601.4,2018-05-01
+빽다방,초코바나나 빽스치노(소프트),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4300,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,24,792,2018-05-01
+빽다방,카페라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,3200,https://www.olmanama.com/brand_104,,,,,,,,,,152,291,2018-05-01
+빽다방,카페라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3200,https://www.olmanama.com/brand_104,,,,,,,,,,163,167,2018-05-01
+빽다방,코코넛커피스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,5000,https://www.olmanama.com/brand_104,,,,,,,,,,199.2,480.7,2025-03-01
+빽다방,콜드브루,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,,174,14,2023-02-01
+빽다방,콜드브루,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4000,https://www.olmanama.com/brand_104,,,,,,,,,,177.8,16.2,2018-05-01
+빽다방,콜드브루라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,4500,https://www.olmanama.com/brand_104,,,,,,,,,,202,195,2023-02-01
+빽다방,콜드브루라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,4500,https://www.olmanama.com/brand_104,,,,,,,,,,171,173,2018-05-01
+빽다방,콤부차 샤인머스캣,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3300,https://www.olmanama.com/brand_104,,,,,,,,,,0,113,2025-09-01
+빽다방,쿠키크런치 빽스치노(베이직),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,11,768,2018-05-01
+빽다방,쿠키크런치 빽스치노(소프트),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,4300,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,11,942,2018-05-01
+빽다방,플레인요거트스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3500,https://www.olmanama.com/brand_104,,,,,,,,,,0,547.4,2018-05-01
+빽다방,피스타치오정글 빽스치노(베이직),ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,6.6,735.7,2026-04-01
+빽다방,헤이즐넛라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,3700,https://www.olmanama.com/brand_104,,,,,,,,,,184,255,2025-03-01
+빽다방,헤이즐넛라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,3700,https://www.olmanama.com/brand_104,,,,,,,,,,170,,2025-03-01
+빽다방,호지차라떼,HOT,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,87.5,434.6,2026-10-01
+빽다방,호지차라떼,ICE,True,2026-10-29,https://paikdabang.com/menu/menu_drink/,3800,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,68.2,305,2026-10-01
+빽다방,흑당라떼,HOT,True,2026-10-28,https://www.olmanama.com/brand_104,5500,https://www.olmanama.com/brand_104,,,,,,,,,,197,360,2023-02-01
+빽다방,흑당라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_104,5500,https://www.olmanama.com/brand_104,,,,,,,,,,195,368,2022-01-01
+컴포즈커피,고구마라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,곡물라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3300,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,국내산 딸기주스,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4300,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,그레인 바나나 주스,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,그린티라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,그린티프라페,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4000,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,꿀 토마토 주스,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,꿀아메리카노,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2300,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,너티 크림 라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2900,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,논산에서 온 수박 주스,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3900,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,달고나라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4000,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,대추차,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2900,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,더블초코라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,돌체라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,디카페인 돌체라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,디카페인 바닐라라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4300,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,디카페인 아메리카노,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,디카페인 카페라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3900,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,디카페인 콜드브루,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,디카페인 콜드브루 라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4000,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,디카페인 헤이즐넛라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4300,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,딸기라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,딸기생초콜릿라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,딸기스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,딸기요거트스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4000,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,딸기치즈케이크스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4900,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,레몬에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,망고 자몽 요거빙,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3900,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,망고라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,망고에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,망고요거트스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4000,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,매실차,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2900,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,모카자바칩프라페,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,밀크티,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,바닐라 크림 라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2900,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,바닐라라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3300,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,벨장 생초콜릿 라떼,ICE,True,2026-10-29,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,복숭아 캐모마일 티브리즈,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,2900,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,부여밤라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,블랙벨벳 라떼,HOT,True,2026-10-29,https://www.olmanama.com/brand_110,3900,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,블랙벨벳 라떼,ICE,True,2026-10-29,https://www.olmanama.com/brand_110,3900,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,블랙퍼스트,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,블루레몬에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,블루베리라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,블루베리스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,빅포즈 돌체라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,5400,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,빅포즈 디카페인 아메리카노,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4000,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,빅포즈 바닐라라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4900,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,빅포즈 솔티드 쿨 리치,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4100,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,빅포즈 아메리카노,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3000,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,빅포즈 아샷추,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4400,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,빅포즈 카페라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,빅포즈 파인애플 커피,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4900,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,빅포즈 헤이즐넛라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4900,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,상하목장 아이스크림,ICE,True,2026-10-29,https://www.olmanama.com/brand_110,2500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,생초콜릿라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,샤인머스캣 에이드,ICE,True,2026-10-29,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,솔티드 카라멜 아이스크림 라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,솔티드 쿨 리치,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,2500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,스위트콘 프라페,ICE,True,2026-10-29,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,쌍화차,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2900,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,아망추,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,아메리카노,전체,True,2026-10-28,https://www.olmanama.com/brand_110,1800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,아샷추,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,아이스크림 모카,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,아이스크림 아인슈페너,ICE,True,2026-10-29,https://www.olmanama.com/brand_110,4800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,아이스크림 초코라떼,ICE,True,2026-10-29,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,아이스크림 카페라떼,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4700,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,아이스티,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3000,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,아인슈페너라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4200,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,아포가토,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,에스프레소,전체,True,2026-10-28,https://www.olmanama.com/brand_110,1500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,에어리 아메리카노,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2300,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,연유 수박 팥빙,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3900,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,오렌지당근주스,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,유자에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,자몽에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,자몽허니블랙티,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,저당 복숭아 스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3600,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,제주 한라봉 스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3600,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,제주 한라봉 자몽 에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3200,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,청귤생강차,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,청포도에이드,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,카라멜마끼아또,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3300,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,카페라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2900,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,카페모카,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,카푸치노,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2900,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,캔디소다밀크쉐이크,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4200,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,커피밀크쉐이크,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,컴포즈믹스커피,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2300,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,콜드브루,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3300,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,콜드브루 라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,쿠키밀크쉐이크,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,쿠키초코라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,쿠키초코프라페,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4000,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,키위주스,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,파인애플 커피,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3300,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,플레인밀크쉐이크,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4200,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,플레인요거트스무디,ICE,True,2026-10-28,https://www.olmanama.com/brand_110,4000,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,허니레몬티,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,허니유자티,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,허니자몽티,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,허브티 캐모마일,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,허브티 페퍼민트,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,헤이즐넛라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3300,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,홍차 얼그레이,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,흑당 버블 카페라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,4500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,흑당 카페라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3800,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,흑당라떼,전체,True,2026-10-28,https://www.olmanama.com/brand_110,3500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+컴포즈커피,히비스커스,전체,True,2026-10-28,https://www.olmanama.com/brand_110,2500,https://www.olmanama.com/brand_110,,,,,,,,,,,,
+빽다방,시그니처 딥크림라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,510,https://paikdabang.com/menu/menu_new/,,,,,,,,293.6,553.3,2026-11-01
+빽다방,시그니처 딥크림라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,660,https://paikdabang.com/menu/menu_new/,,,,,,,,193.4,420,2026-11-01
+빽다방,디카페인 시그니처 딥크림라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,510,https://paikdabang.com/menu/menu_new/,,,,,,,,0.8,540.7,2026-11-01
+빽다방,디카페인 시그니처 딥크림라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,660,https://paikdabang.com/menu/menu_new/,,,,,,,,1.1,416.9,2026-11-01
+빽다방,스몰사이즈 시그니처 딥크림라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,440,https://paikdabang.com/menu/menu_new/,,,,,,,,116.1,252,2026-11-01
+빽다방,디카페인 스몰사이즈 시그니처 딥크림라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,440,https://paikdabang.com/menu/menu_new/,,,,,,,,0.7,250.2,2026-11-01
+빽다방,우바홍차,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,59.3,32.8,2026-10-01
+빽다방,우바홍차,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,53.2,1.5,2026-10-01
+빽다방,리치루이보스티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,0.0,179.7,2026-10-01
+빽다방,리치루이보스티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0.0,139.5,2026-10-01
+빽다방,자몽블랙티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,47.1,193.1,2026-10-01
+빽다방,자몽블랙티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,35.7,173.5,2026-10-01
+빽다방,레몬블랙티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,37.4,250.4,2026-10-01
+빽다방,레몬블랙티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,41.9,243.1,2026-10-01
+빽다방,사과유자티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,0.0,204,2026-10-01
+빽다방,사과유자티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0.0,216.1,2026-10-01
+메가MGC커피,딥 초코 체리 프라페,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,26.0,604,2026-10-21
+메가MGC커피,쫀득 모찌 밀크티,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,14.2,375.3,2026-10-21
+메가MGC커피,매실 모과차,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0.0,276.6,2026-10-21
+메가MGC커피,매실 모과차,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0.0,244.7,2026-10-21
+메가MGC커피,나 혼자만 드랍 UP! 은랑 큐브 레몬에이드,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0,193.5,2026-10-08
+메가MGC커피,"음, 괜찮은 휴식이군 블레이드 초코크림커피",ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,242.7,,2026-10-08
+메가MGC커피,무카페인 오르조라떼,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0,277.9,2026-10-28
+메가MGC커피,무카페인 오르조라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0,245.4,2026-10-28
+빽다방,씨앗호떡라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,510,https://paikdabang.com/menu/menu_new/,,,,,,,,0,551.2,2026-11-01
+빽다방,씨앗호떡라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,660,https://paikdabang.com/menu/menu_new/,,,,,,,,0,392.4,2026-11-01
+빽다방,씨앗호떡빽스치노 (베이직),전체,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,660,https://paikdabang.com/menu/menu_new/,,,,,,,,0,540.7,2026-11-01
+빽다방,씨앗호떡빽스치노 (소프트),전체,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,660,https://paikdabang.com/menu/menu_new/,,,,,,,,0,718.3,2026-11-01
+빽다방,씨앗호떡 소프트,전체,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,440,https://paikdabang.com/menu/menu_new/,,,,,,,,0,444,2026-11-01
+빽다방,씨앗호떡 요거트아이스크림,전체,True,2026-11-18,https://paikdabang.com/menu/menu_new/,,,440,https://paikdabang.com/menu/menu_new/,,,,,,,,0,437.8,2026-11-01
+빽다방,챔피언스 블랙 벨벳 라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,209,606.1,2026-09-01
+빽다방,챔피언스 블랙 벨벳 라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,165,445.9,2026-09-01
+빽다방,디카페인 챔피언스 블랙 벨벳 라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,3,464.3,2026-09-01
+빽다방,디카페인 챔피언스 블랙 벨벳 라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,3,498.6,2026-09-01
+빽다방,에어폼 아메리카노,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,293,21.9,2026-03-01
+빽다방,디카페인 더블에스프레소,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,60,https://paikdabang.com/menu/menu_coffee/,,,,,,,,1.9,21,2018-05-01
+빽다방,디카페인 아메리카노,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,1.0,12.9,2018-05-01
+빽다방,디카페인 아메리카노,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,1.2,11.3,2018-05-01
+빽다방,아이스티샷 망고추가(아샷망추),전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,106,312,2024-08-01
+빽다방,디카페인 아이스티샷추가(아샷추),전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,27.9,262,2018-01-01
+빽다방,디카페인 아이스티샷 망고추가(아샷망추),전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,26.0,302,2024-08-01
+빽다방,코코넛카페라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,242.9,445.3,2025-03-01
+빽다방,코코넛카페라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,177.2,368.1,2025-03-01
+빽다방,디카페인 코코넛카페라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,4.1,435.6,2025-03-01
+빽다방,디카페인 코코넛카페라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,2.8,351.8,2025-03-01
+빽다방,디카페인 코코넛커피스무디,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,3.5,488.5,2025-03-01
+빽다방,꿀아메리카노,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,175,142,2025-03-01
+빽다방,꿀아메리카노,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,161,,2025-03-01
+빽다방,디카페인 꿀아메리카노,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,0.7,143.7,2025-03-01
+빽다방,디카페인 꿀아메리카노,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,0.7,140.1,2025-03-01
+빽다방,헤이즐넛아메리카노,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,190,,2025-03-01
+빽다방,헤이즐넛아메리카노,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,166,,2025-03-01
+빽다방,디카페인 헤이즐넛 아메리카노,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,0.8,99.1,2025-03-01
+빽다방,디카페인 헤이즐넛 아메리카노,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,0.7,95.7,2025-03-01
+빽다방,디카페인 헤이즐넛라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,0.8,263.6,2025-03-01
+빽다방,디카페인 헤이즐넛라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,0.7,255.2,2025-03-01
+빽다방,디카페인 카페라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,0.8,270.8,2018-05-01
+빽다방,디카페인 카페라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,0.7,186.7,2018-05-01
+빽다방,흑당버블 카페라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,76,384,2018-05-01
+빽다방,디카페인 흑당버블 카페라떼,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,0.4,386.6,2018-05-01
+빽다방,디카페인 바닐라라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,0.8,381.4,2018-05-01
+빽다방,디카페인 바닐라라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,0.8,373.7,2018-05-01
+빽다방,카페모카,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,299,357,2018-05-01
+빽다방,카페모카,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,270,304,2018-05-01
+빽다방,디카페인 카페모카,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,136.7,362,2018-05-01
+빽다방,디카페인 카페모카,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,117.8,323,2018-05-01
+빽다방,카라멜마키아또,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,165,349,2018-05-01
+빽다방,카라멜마키아또,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,171,340,2018-05-01
+빽다방,디카페인 카라멜 마키아또,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,0.7,314.8,2018-05-01
+빽다방,디카페인 카라멜 마키아또,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,0.8,328.1,2018-05-01
+빽다방,바나나 카페라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,94,,2023-03-01
+빽다방,바나나 카페라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,78,,2023-03-01
+빽다방,디카페인 바나나카페라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,0.3,308.0,2023-03-01
+빽다방,디카페인 바나나카페라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,0.3,296.5,2023-03-01
+빽다방,디카페인 바나나커피쉐이크,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,0.4,442.4,2023-03-01
+빽다방,아이스크림바닐라라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,172,555,2022-05-01
+빽다방,디카페인 아이스크림 카페라떼,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,0.8,312.4,2022-05-01
+빽다방,디카페인 아이스크림 바닐라라떼,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,0.8,504.1,2022-05-01
+빽다방,디카페인 아이스크림카페모카,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,113.9,450,2022-05-01
+빽다방,크리미 콜드브루 바닐라,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,,,2025-10-01
+빽다방,크리미 콜드브루 카라멜,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,,,2025-10-01
+빽다방,디카페인 크리미 콜드브루 바닐라,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,,,2025-10-01
+빽다방,디카페인 크리미 콜드브루 카라멜,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,,,2025-10-01
+빽다방,콜드브루 연유라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,187.7,412.1,2022-01-01
+빽다방,콜드브루 연유라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,197,435,2023-02-01
+빽다방,디카페인 콜드브루 연유라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,11.8,395,2022-01-01
+빽다방,디카페인 콜드브루 연유라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,12.6,416.0,2023-02-01
+빽다방,콜드브루 흑당라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,195,368,2022-01-01
+빽다방,콜드브루 흑당라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,197,360,2023-02-01
+빽다방,디카페인 콜드브루 흑당라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,660,https://paikdabang.com/menu/menu_coffee/,,,,,,,,12.8,364.6,2022-01-01
+빽다방,디카페인 콜드브루 흑당라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,510,https://paikdabang.com/menu/menu_coffee/,,,,,,,,12.5,350.7,2023-02-01
+빽다방,빽사이즈 아메리카노,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,,293,10,2018-01-01
+빽다방,빽사이즈 카페라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,,286,286,2018-01-01
+빽다방,디카페인 빽사이즈 아메리카노,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,,1.6,30.3,2018-01-01
+빽다방,디카페인 빽사이즈 카페라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,,2.3,267.6,2018-01-01
+빽다방,빽사이즈 원조커피,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,,456,828.8,2018-01-01
+빽다방,빽사이즈 바닐라라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,,322,575,2018-01-01
+빽다방,디카페인 빽사이즈 바닐라라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,,1.8,564.0,2018-01-01
+빽다방,빽사이즈 아이스티샷추가,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,,179,329,2018-01-01
+빽다방,빽사이즈 아이스티샷 망고추가,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,,177,437,2024-08-01
+빽다방,디카페인 빽사이즈 아이스티샷추가,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,,38.1,352,2018-01-01
+빽다방,디카페인 빽사이즈 아이스티샷 망고추가,전체,True,2026-11-18,https://paikdabang.com/menu/menu_coffee/,,,990,https://paikdabang.com/menu/menu_coffee/,,,,,,,,36.6,483,2024-08-01
+빽다방,꿀밤라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,484.6,2023-07-01
+빽다방,블랙 벨벳 말차라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,90,757.9,2026-09-01
+빽다방,블랙 벨벳 말차라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,66,545,2026-09-01
+빽다방,포도주스,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,284.6,2026-09-01
+빽다방,복숭아주스,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,280.3,2026-09-01
+빽다방,골드 키위 주스,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,276.8,2026-08-01
+빽다방,김천 자두 주스,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,425.9,2026-08-01
+빽다방,사과젤리 리치스무디,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,295.5,2026-08-01
+빽다방,사과젤리 복숭아스무디,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,248.4,2026-08-01
+빽다방,사과젤리 청포도스무디,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,261.2,2026-08-01
+빽다방,저당사과젤리 매실티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,42.2,2026-08-01
+빽다방,저당사과젤리 매실에이드,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,33,2026-08-01
+빽다방,제로슈거 매실티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,17.4,2026-08-01
+빽다방,제로슈거 매실티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,27.6,2026-08-01
+빽다방,제로슈거 납작복숭아 아이스티,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,9.8,48.9,2026-03-01
+빽다방,제로슈거 납작복숭아 아.샷.추,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,106.5,48.3,2026-03-01
+빽다방,제로슈거 레몬티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,0.0,116.5,2026-03-01
+빽다방,제로슈거 레몬티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0.0,113.6,2026-03-01
+빽다방,제로슈거 자몽티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,0.0,124.5,2026-03-01
+빽다방,제로슈거 자몽티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0.0,113.7,2026-03-01
+빽다방,딸기복숭아 루이보스티,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,156,2026-01-01
+빽다방,딸기앤쿠키 쉐이크,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,1,534,2026-01-01
+빽다방,우리사과주스,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,190,2026-01-01
+빽다방,사과당근주스,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,200,2026-01-01
+빽다방,생강차,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,214,2025-12-01
+빽다방,생강차,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,214,2025-12-01
+빽다방,율무아몬드라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,324,2025-12-01
+빽다방,율무아몬드라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,314,2025-12-01
+빽다방,메리 더블넛츠 초코라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,,,2025-11-01
+빽다방,애사비,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,119,2025-09-01
+빽다방,블루레몬에이드,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,306,2025-08-01
+빽다방,아망추 (아이스티 + 망고추가),전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,15,295,2024-08-01
+빽다방,파인애플스무디,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,,2025-04-01
+빽다방,패션후르츠스무디,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,,358,2025-03-01
+빽다방,망고패션스무디,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,,437,2025-03-01
+빽다방,뱅쇼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,0.0,226.9,2023-11-01
+빽다방,뱅쇼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0.0,229.7,2023-11-01
+빽다방,우리쌀라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,0.0,424.3,2024-10-01
+빽다방,우리쌀라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0.0,450.1,2024-10-01
+빽다방,대추차,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,,211.8,2024-10-01
+빽다방,대추차,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,,255.1,2024-10-01
+빽다방,쌍화차,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,,2024-10-01
+빽다방,쌍화차,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,,2024-10-01
+빽다방,대추라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,384.8,2025-01-01
+빽다방,아임파인민트티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,4,59,2024-08-01
+빽다방,아임파인민트티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,4,52,2024-08-01
+빽다방,쿨라임스무디,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,,376,2024-04-01
+빽다방,쿨라임에이드,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,,189,2024-04-01
+빽다방,수정과,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,289.4,2024-02-01
+빽다방,수정과,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,294.6,2024-02-01
+빽다방,고구마라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,565.9,2023-07-01
+빽다방,고구마라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,447.3,2023-07-01
+빽다방,꿀밤라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,472.7,2023-07-01
+빽다방,꿀밤스무디,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,553.3,2025-10-01
+빽다방,고구마스무디,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,518,2018-05-01
+빽다방,퐁당치노(바닐라),전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,496,2018-05-01
+빽다방,퐁당치노(원조커피),전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,189,650,2018-05-01
+빽다방,퐁당치노(미숫가루),전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,613,2018-05-01
+빽다방,토피넛라떼,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,44.6,389.3,2018-06-01
+빽다방,토피넛라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,54.2,450.2,2018-06-01
+빽다방,밀크티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,152.7,325.7,2018-06-01
+빽다방,밀크티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,157.4,336.2,2018-06-01
+빽다방,흑당버블 밀크티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,77,513,2018-06-01
+빽다방,페퍼민트티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,3.12,2021-07-01
+빽다방,페퍼민트티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,4.68,2021-07-01
+빽다방,황금캐모마일티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,7.40,2018-06-01
+빽다방,황금캐모마일티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,7.90,2018-06-01
+빽다방,레몬티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,0.00,285.94,2018-06-01
+빽다방,레몬티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0.00,269.00,2018-06-01
+빽다방,피치우롱스위티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,65,150,2018-06-01
+빽다방,피치우롱스위티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,71,150,2018-06-01
+빽다방,우롱티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,92,7,2018-06-01
+빽다방,우롱티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,67.14,3.36,2018-06-01
+빽다방,유자티,HOT,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,510,https://paikdabang.com/menu/menu_drink/,,,,,,,,,284,2018-06-01
+빽다방,유자티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,,261,2018-06-01
+빽다방,딸기에이드,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0.0,185.3,2022-02-01
+빽다방,파인애플 주스,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0,192,2018-05-01
+빽다방,토마토 주스,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0.0,182.8,2021-12-01
+빽다방,망고 주스,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,660,https://paikdabang.com/menu/menu_drink/,,,,,,,,0.00,241.31,2018-05-01
+빽다방,빽사이즈 미숫가루,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,990,https://paikdabang.com/menu/menu_drink/,,,,,,,,,538,2025-08-01
+빽다방,빽사이즈 초코라떼,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,990,https://paikdabang.com/menu/menu_drink/,,,,,,,,23,555,2018-04-01
+빽다방,빽사이즈 달콤아이스티,ICE,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,990,https://paikdabang.com/menu/menu_drink/,,,,,,,,32,406,2018-04-01
+빽다방,빽사이즈 아망추,전체,True,2026-11-18,https://paikdabang.com/menu/menu_drink/,,,990,https://paikdabang.com/menu/menu_drink/,,,,,,,,26,547,2024-08-01
+빽다방,블랙 벨벳 자바칩빽스치노 소프트,전체,True,2026-11-18,https://paikdabang.com/menu/menu_ccino/,,,660,https://paikdabang.com/menu/menu_ccino/,,,,,,,,242,663.2,2026-09-01
+빽다방,디카페인 블랙 벨벳 자바칩빽스치노,전체,True,2026-11-18,https://paikdabang.com/menu/menu_ccino/,,,660,https://paikdabang.com/menu/menu_ccino/,,,,,,,,85,494.4,2026-09-01
+빽다방,디카페인 블랙 벨벳 자바칩빽스치노 소프트,전체,True,2026-11-18,https://paikdabang.com/menu/menu_ccino/,,,660,https://paikdabang.com/menu/menu_ccino/,,,,,,,,85,668.3,2026-09-01
+빽다방,딸기 빽스치노(BASIC),전체,True,2026-11-18,https://paikdabang.com/menu/menu_ccino/,,,660,https://paikdabang.com/menu/menu_ccino/,,,,,,,,,480,2018-05-01
+빽다방,딸기 빽스치노(SOFT),전체,True,2026-11-18,https://paikdabang.com/menu/menu_ccino/,,,660,https://paikdabang.com/menu/menu_ccino/,,,,,,,,0,687,2018-05-01
+빽다방,초코빽스치노(BASIC),전체,True,2026-11-18,https://paikdabang.com/menu/menu_ccino/,,,660,https://paikdabang.com/menu/menu_ccino/,,,,,,,,36,520,2018-05-01
+빽다방,초코빽스치노(SOFT),전체,True,2026-11-18,https://paikdabang.com/menu/menu_ccino/,,,660,https://paikdabang.com/menu/menu_ccino/,,,,,,,,36,694,2018-05-01
+메가MGC커피,하우스밀크 라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,118.0,328.6,2026-09-02
+메가MGC커피,저당 골든애플 블랙티,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,68.0,123.4,2026-09-16
+메가MGC커피,ARIH 듀얼바이오틱 소다 레드 루비 갈로어,전체,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0.0,20,2026-06-04
+메가MGC커피,ARIH 듀얼바이오틱 소다 포지티브 오렌지,전체,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0.0,20,2026-06-04
+메가MGC커피,ARIH 듀얼바이오틱 소다 클리어레몬,전체,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0.0,20,2026-06-05
+메가MGC커피,ARIH 듀얼바이오틱 소다 피치망고 호라이즌,전체,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0.0,20,2026-06-04
+메가MGC커피,ARIH 포스트바이오틱 에너지 드링크 레몬크레스트,전체,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,100,10,2026-06-04
+메가MGC커피,ARIH 포스트바이오틱 에너지 드링크 오렌지아워,전체,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,100,10,2026-06-04
+메가MGC커피,ARIH 포스트바이오틱 에너지 드링크 트로피칼웨이브,전체,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,100,10,2026-06-05
+메가MGC커피,저당 꿀배 XO야쿠르트,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0.0,25.4,2026-04-01
+메가MGC커피,딸기라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0.0,314.5,2025-01-16
+메가MGC커피,밀크쉐이크,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0.0,401.0,2025-12-10
+메가MGC커피,유자생강차,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0.0,389.4,2025-11-06
+메가MGC커피,초코젤라또 말차라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,213.5,332.3,2025-12-10
+메가MGC커피,골드키위주스,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0.0,202.7,2025-03-20
+메가MGC커피,귤 톡톡 젤리스무디,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0.0,369.4,2025-03-20
+메가MGC커피,왕메가카페라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,354.0,284.2,2025-03-20
+메가MGC커피,디카페인 왕메가카페라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,11.7,282.0,2025-03-20
+메가MGC커피,디카페인 라이트 바닐라 아몬드라떼,전체,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,7.8,81.7,2025-04-02
+메가MGC커피,왕메가사과유자,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0.0,313.3,2025-03-20
+메가MGC커피,디카페인 헛개리카노,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,7.8,39.8,2025-03-20
+메가MGC커피,디카페인 헛개리카노,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,7.8,39.8,2025-03-20
+메가MGC커피,디카페인 왕메가헛개리카노,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,11.7,64.0,2025-03-20
+메가MGC커피,상큼 리치티,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0.0,274.8,2024-11-06
+메가MGC커피,상큼 리치티,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0.0,265.7,2024-11-06
+메가MGC커피,할메가미숫커피,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,176.5,418.7,2024-09-04
+메가MGC커피,왕메가초코,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,946,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,4.3,515.1,2024-06-10
+메가MGC커피,왕메가아이스티,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,946,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,41.2,384.1,2024-06-10
+메가MGC커피,제로 복숭아 아이스티,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,13.0,6.8,2024-06-10
+메가MGC커피,디카페인 꿀아메리카노,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,7.8,200.0,2024-06-10
+메가MGC커피,디카페인 헤이즐넛 아메리카노,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,7.8,69.2,2024-06-10
+메가MGC커피,디카페인 바닐라 아메리카노,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,7.8,86.0,2024-06-10
+메가MGC커피,디카페인 카푸치노,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,7.8,160.9,2024-06-10
+메가MGC커피,디카페인 헤이즐넛 라떼,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,7.8,231.7,2024-06-10
+메가MGC커피,디카페인 연유라떼,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,7.8,368.4,2024-06-10
+메가MGC커피,디카페인 카페모카,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,9.7,395.7,2024-06-10
+메가MGC커피,디카페인 꿀아메리카노,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,7.8,200.0,2024-06-10
+메가MGC커피,디카페인 헤이즐넛 아메리카노,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,7.8,87.4,2024-06-10
+메가MGC커피,디카페인 바닐라 아메리카노,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,7.8,109.7,2024-06-10
+메가MGC커피,디카페인 카푸치노,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,7.8,144.6,2024-06-10
+메가MGC커피,디카페인 헤이즐넛 라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,7.8,217.4,2024-06-10
+메가MGC커피,디카페인 연유라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,7.8,317.6,2024-06-10
+메가MGC커피,디카페인 카페모카,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,9.7,395.7,2024-06-12
+메가MGC커피,에스프레소,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,118.0,8.1,2024-06-10
+메가MGC커피,에스프레소 도피오,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,236.0,16.1,2024-06-10
+메가MGC커피,오레오초코라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,1.1,493.2,2024-06-10
+메가MGC커피,흑당버블밀크티라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,14.3,330.2,2024-06-10
+메가MGC커피,핫초코,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,4.5,428.0,2024-06-10
+메가MGC커피,로얄밀크티라떼,HOT,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,74.7,320.1,2024-06-10
+메가MGC커피,흑당라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0.0,318.7,2024-06-10
+메가MGC커피,흑당밀크티라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,8.1,310.3,2024-06-10
+메가MGC커피,흑당버블라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0.0,320.3,2024-06-10
+메가MGC커피,아이스초코,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,2.8,322.6,2024-06-10
+메가MGC커피,로얄밀크티라떼,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,74.7,271.3,2024-06-10
+메가MGC커피,자몽 톡톡 스무디,ICE,True,2026-11-18,https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1,,,,,,,,,,,,0.0,342.3,2026-04-29
