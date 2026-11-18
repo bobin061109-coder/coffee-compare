@@ -244,6 +244,24 @@ def parse_mega(html):
     return items
 
 
+RECENT_DAYS = 60  # 공식 사진이 최근 60일 안에 올라온 음료만 '새 메뉴'로 봄
+
+
+def image_date(url):
+    """공식 사진 주소에 들어 있는 업로드 날짜를 읽습니다.
+    빽다방: /uploads/2026/11/...  메가: .../menu/20261021185329_...png"""
+    m = re.search(r"/uploads/(20\d{2})/(\d{2})/", url)
+    if m:
+        return datetime(int(m.group(1)), int(m.group(2)), 1, tzinfo=timezone.utc)
+    m = re.search(r"/(20\d{2})(\d{2})(\d{2})\d{6}_", url)
+    if m:
+        try:
+            return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)), tzinfo=timezone.utc)
+        except ValueError:
+            return None
+    return None
+
+
 def save_image(session, brand, item):
     url = item["img"]
     ext = urlparse(url).path.rsplit(".", 1)[-1].lower()
@@ -323,6 +341,9 @@ def update_menus(session):
             key = (brand, norm(name), item["variant"])
             if key in known:
                 continue
+            uploaded = image_date(item["img"])
+            if not uploaded or (datetime.now(timezone.utc) - uploaded).days > RECENT_DAYS:
+                continue  # 예전부터 있던 메뉴(사진이 오래됨)는 새 메뉴로 보지 않음
             known.add(key)
             fresh.append(item)
         # 안전장치: 한 번에 너무 많으면 이름 표기가 달라 기존 메뉴를 새 메뉴로 착각한 것일 수 있음

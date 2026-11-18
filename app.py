@@ -141,6 +141,25 @@ def matches(title, patterns):
     return any(re.search(p, title) for p in patterns)
 
 
+def status_card(brand, line, kind, link=None):
+    """앱 배경(크림색)에서도 잘 보이도록 색을 직접 지정한 브랜드 상태 카드."""
+    bg, fg = {"ok": ("#E8F5E9", "#2E7D32"), "warn": ("#FFF3E0", "#B45309"),
+              "off": ("#EFEBE9", "#5D4037")}[kind]
+    accent = BRAND_COLORS.get(brand, fg)
+    link_html = (f"<div style='margin-top:10px'><a href='{link}' target='_blank' "
+                 f"style='color:#FFFFFF;background:{accent};padding:6px 12px;border-radius:999px;"
+                 f"text-decoration:none;font-weight:700;font-size:0.9rem'>{brand} 이벤트 보러가기 ↗</a></div>"
+                 if link else "")
+    st.markdown(
+        f"<div style='background:{bg};border-left:6px solid {accent};border-radius:12px;"
+        f"padding:14px 16px;min-height:96px'>"
+        f"<div style='color:#3E2723;font-weight:800;font-size:1.05rem'>{brand}</div>"
+        f"<div style='color:{fg};font-weight:600;margin-top:6px;font-size:0.95rem'>{line}</div>"
+        f"{link_html}</div>",
+        unsafe_allow_html=True,
+    )
+
+
 def show_events(items, today):
     if not items:
         st.info("조건에 맞는 게시물이 없습니다.")
@@ -607,15 +626,14 @@ with event_tab:
         times = [t for t in (parse_checked(e.get("checked_at", "")) for e in events if e["brand"] == brand) if t]
         with col:
             if not times:
-                st.warning(f"**{brand}**\n\n자동 수집 불가 (공식 사이트가 차단)")
-                st.link_button(f"{brand} 이벤트 보러가기", OFFICIAL_PAGES[brand])
+                status_card(brand, "자동 수집 불가 (공식 사이트가 차단)", "off", OFFICIAL_PAGES[brand])
             else:
                 last = max(times)
                 last_kst = last.astimezone(KST).strftime("%m/%d %H:%M")
                 if now_utc - last > timedelta(days=STALE_DAYS):
-                    st.warning(f"**{brand}**\n\n마지막 확인 {last_kst} — {STALE_DAYS}일 넘게 새로 확인되지 않았어요")
+                    status_card(brand, f"마지막 확인 {last_kst} · {STALE_DAYS}일 넘게 새로 확인 안 됨", "warn")
                 else:
-                    st.success(f"**{brand}**\n\n마지막 확인 {last_kst}")
+                    status_card(brand, f"마지막 확인 {last_kst}", "ok")
 
     if error:
         st.warning(error)
@@ -631,7 +649,7 @@ with event_tab:
         with c2:
             selected = st.multiselect("브랜드", [b for b in BRANDS if any(e["brand"] == b for e in events)],
                                       default=[b for b in BRANDS if any(e["brand"] == b for e in events)], key="ev_brands")
-        hide_expired = st.toggle("만료된 이벤트 숨기기", value=False, key="ev_hide")
+        hide_expired = st.checkbox("만료된 이벤트 숨기기", value=False, key="ev_hide")
 
         q = re.sub(r"\s+", "", query).casefold()
         base = [e for e in events
