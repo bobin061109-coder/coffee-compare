@@ -160,38 +160,52 @@ def main():
         raise SystemExit("새 공식 게시물을 하나도 확인하지 못했습니다. GitHub Actions 로그를 확인하세요.")
 
 
-# ===== 메뉴 자동 추가 준비: 메뉴 페이지 구조 확인용 (데이터는 바꾸지 않음) =====
-MENU_PAGES = [
-    "https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1",
-    "https://www.mega-mgccoffee.com/menu/menu_list.php",
-    "https://paikdabang.com/menu/menu_drink/",
-    "https://paikdabang.com/menu/menu_new/",
-    "https://www.olmanama.com/brand_110",
-    "https://www.olmanama.com/brand_104",
-]
+# ===== 메뉴 자동 추가 준비: 메뉴 페이지 구조 확인용 2차 (데이터는 바꾸지 않음) =====
+def _show(label, text, limit=3000):
+    print(f"  [{label}] {clean(text)[:limit]}")
 
 
 def diagnose_menus(session):
-    for url in MENU_PAGES:
+    jobs = [
+        ("mega", "https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1"),
+        ("paik", "https://paikdabang.com/menu/menu_new/"),
+        ("olma", "https://www.olmanama.com/brand_110"),
+        ("olma", "https://www.olmanama.com/brand_104"),
+    ]
+    for kind, url in jobs:
         time.sleep(2)
         try:
             r = session.get(url, timeout=30)
-            print(f"[메뉴진단] {url} → {r.status_code}, {len(r.text)}자, 타입 {r.headers.get('content-type', '')}")
-            soup = BeautifulSoup(r.text, "html.parser")
-            text = clean(soup.get_text(" ", strip=True))
-            prices = re.findall(r"[가-힣A-Za-z()\s]{2,25}\s*[\d,]{3,6}\s*원", text)
-            print(f"  가격 패턴 {len(prices)}개 예시: {prices[:12]}")
-            imgs = [i.get("src") or i.get("data-src") for i in soup.find_all("img")]
-            print(f"  이미지 {len(imgs)}개 예시: {imgs[:8]}")
-            menu_links = [a["href"] for a in soup.find_all("a", href=True) if "menu" in a["href"]]
-            print(f"  menu 링크 {len(menu_links)}개 예시: {menu_links[:15]}")
-            scripts = re.findall(r"[\w/.-]*(?:ajax|list|menu)[\w/.-]*\.php[^'\"\s]*", r.text)
-            print(f"  php 주소 후보: {sorted(set(scripts))[:15]}")
-            body = soup.find("body")
-            print(f"  본문 앞부분: {clean(str(body)[:2500]) if body else clean(r.text[:2500])}")
+            r.encoding = "utf-8"
+            html = r.text
+            print(f"[메뉴진단2] {url} → {r.status_code}, {len(html)}자")
+            soup = BeautifulSoup(html, "html.parser")
+            if kind == "mega":
+                for m in list(re.finditer(r"menu\.php", html))[:4]:
+                    _show("menu.php 주변", html[max(0, m.start() - 700): m.end() + 900], 1700)
+                for form in soup.find_all("form")[:3]:
+                    _show("form", str(form), 1500)
+            elif kind == "paik":
+                img = next((i for i in soup.find_all("img") if "/uploads/" in (i.get("src") or "")), None)
+                if img:
+                    node = img
+                    for _ in range(4):
+                        node = node.parent or node
+                    _show("메뉴 1개 HTML", str(node), 3000)
+            else:
+                text = clean(soup.get_text(" ", strip=True))
+                prices = re.findall(r"[^\s]{1,12}(?:\s[^\s]{1,12}){0,3}\s*[\d,]{3,6}\s*원", text)
+                print(f"  가격 패턴 {len(prices)}개 예시: {prices[:25]}")
+                idx = html.find("원<")
+                if idx < 0:
+                    idx = html.find("원")
+                _show("가격 주변 HTML", html[max(0, idx - 1500): idx + 1500], 3000)
+                tables = soup.find_all("table")
+                print(f"  table {len(tables)}개")
+                if tables:
+                    _show("첫 table", str(tables[0]), 2000)
         except Exception as exc:  # 진단 실패는 수집에 영향 없음
-            print(f"[메뉴진단] {url} 실패: {exc}")
-
+            print(f"[메뉴진단2] {url} 실패: {exc}")
 
 if __name__ == "__main__":
     main()
