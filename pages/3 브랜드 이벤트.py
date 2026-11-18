@@ -126,7 +126,7 @@ def show_events(items, today):
             st.link_button("공식 게시물 열기", event["url"])
 
 
-st.title("📣 저가커피 브랜드 이벤트")
+st.title("📣 커피 브랜드 이벤트")
 st.caption("공식 사이트 게시물 제목에 적힌 기간으로 진행중/만료를 표시해요. 정확한 조건은 공식 원문에서 확인하세요.")
 
 today = datetime.now(KST).date()
