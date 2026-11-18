@@ -313,6 +313,11 @@ def loose(text):
     return re.sub(r"[^0-9a-z가-힣]", "", text)
 
 
+# 공식 사이트에 비슷한 이름이 있어도 실제로는 없는 메뉴 → 항상 뺌
+REMOVE_MENUS = {
+    ("빽다방", "달콤아이스티"),  # 공식엔 '빽사이즈 달콤아이스티'만 있음
+}
+
 # 메뉴 이름 자체를 바로잡을 것 (CSV에 반영됨)
 MENU_RENAMES = {
     ("빽다방", "녹차 빽스치노(베이직)"): "말차 빽스치노(베이직)",
@@ -404,7 +409,16 @@ def update_menus(session):
             if r["brand"] == brand and r["menu_name"] == old_name:
                 r["menu_name"] = new_name
                 renamed += 1
+    dropped = [r for r in existing if (r["brand"], r["menu_name"]) in REMOVE_MENUS]
+    existing = [r for r in existing if (r["brand"], r["menu_name"]) not in REMOVE_MENUS]
+    for r in dropped:
+        print(f"[메뉴] 없는 메뉴라 뺌: {r['brand']} · {r['menu_name']} ({r['variant']})")
+    renamed += len(dropped)
     known = {(r["brand"], norm(r["menu_name"]), r["variant"]) for r in existing}
+    # 이름 표기만 다른 같은 메뉴를 새 메뉴로 착각하지 않도록 느슨한 이름도 기억
+    known_loose = {(r["brand"], loose(r["menu_name"])) for r in existing}
+    known_loose |= {(r["brand"], loose(PHOTO_ALIASES[(r["brand"], r["menu_name"])]))
+                    for r in existing if (r["brand"], r["menu_name"]) in PHOTO_ALIASES}
     known_names = {(r["brand"], norm(r["menu_name"])) for r in existing}
     found = {"빽다방": [], "메가MGC커피": []}
 
@@ -456,15 +470,12 @@ def update_menus(session):
             if not (2 <= len(name) <= 40) or not re.search(r"[가-힣]", name):
                 continue
             key = (brand, norm(name), item["variant"])
-            if key in known:
+            if key in known or (brand, loose(name)) in known_loose:
                 continue
-            uploaded = image_date(item["img"])
-            if not uploaded or (datetime.now(timezone.utc) - uploaded).days > RECENT_DAYS:
-                continue  # 예전부터 있던 메뉴(사진이 오래됨)는 새 메뉴로 보지 않음
             known.add(key)
             fresh.append(item)
         # 안전장치: 한 번에 너무 많으면 이름 표기가 달라 기존 메뉴를 새 메뉴로 착각한 것일 수 있음
-        if len(fresh) > 30:
+        if len(fresh) > 200:
             print(f"[메뉴] {brand}: 새 음료가 {len(fresh)}개나 돼서 이번엔 추가하지 않음 (예시: {[i['name'] + ' ' + i['variant'] for i in fresh[:40]]})")
             continue
         for item in fresh:
