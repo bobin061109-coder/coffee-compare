@@ -262,22 +262,65 @@ def image_date(url):
     return None
 
 
-def save_image(session, brand, item):
-    url = item["img"]
-    ext = urlparse(url).path.rsplit(".", 1)[-1].lower()
-    if ext not in ("jpg", "jpeg", "png", "webp"):
-        return
-    path = IMG_DIR / f"{brand}_{item['name']}_{item['variant']}.{ext}"
-    if path.exists():
-        return
+def has_photo(brand, name, variant):
+    stem = f"{brand}_{name}_{variant}"
+    return any((IMG_DIR / f"{stem}.{ext}").exists() for ext in ("jpg", "jpeg", "png", "webp"))
+
+
+def save_image(session, brand, name, variant, url):
+    """공식 사진을 받아 가로 400px JPEG로 줄여 저장합니다(저장소 용량 절약)."""
+    if not url or "/" in name or has_photo(brand, name, variant):
+        return False
     try:
         r = session.get(url, timeout=30)
         r.raise_for_status()
-        if 0 < len(r.content) < 3_000_000:
-            IMG_DIR.mkdir(exist_ok=True)
-            path.write_bytes(r.content)
+        if not 0 < len(r.content) < 8_000_000:
+            return False
+        IMG_DIR.mkdir(exist_ok=True)
+        path = IMG_DIR / f"{brand}_{name}_{variant}.jpg"
+        try:
+            from io import BytesIO
+            from PIL import Image
+            img = Image.open(BytesIO(r.content))
+            if img.mode in ("RGBA", "LA", "P"):
+                img = img.convert("RGBA")
+                bg = Image.new("RGB", img.size, (255, 255, 255))
+                bg.paste(img, mask=img.split()[-1])
+                img = bg
+            else:
+                img = img.convert("RGB")
+            if img.width > 400:
+                img = img.resize((400, round(img.height * 400 / img.width)))
+            img.save(path, "JPEG", quality=85, optimize=True)
+        except Exception:  # 변환이 안 되면 원본 그대로 저장
+            ext = urlparse(url).path.rsplit(".", 1)[-1].lower()
+            if ext not in ("jpg", "jpeg", "png", "webp"):
+                return False
+            path.with_suffix("." + ext).write_bytes(r.content)
+        return True
     except requests.RequestException as exc:
         print(f"  사진 저장 실패 {url}: {exc}")
+        return False
+
+
+def backfill_photos(session, existing, found):
+    """이미 있는 메뉴 중 사진이 없는 것에 공식 사진을 채웁니다."""
+    exact, by_name = {}, {}
+    for brand, items in found.items():
+        for i in items:
+            if i["img"]:
+                exact.setdefault((brand, norm(i["name"]), i["variant"]), i["img"])
+                by_name.setdefault((brand, norm(i["name"])), i["img"])
+    added = 0
+    for row in existing:
+        brand, name, variant = row["brand"], row["menu_name"], row["variant"]
+        if brand not in found or has_photo(brand, name, variant):
+            continue
+        url = exact.get((brand, norm(name), variant)) or by_name.get((brand, norm(name)))
+        if url and save_image(session, brand, name, variant, url):
+            added += 1
+            time.sleep(0.3)
+    print(f"[사진] 기존 메뉴 사진 {added}개 채움")
 
 
 def update_menus(session):
@@ -359,8 +402,12 @@ def update_menus(session):
             if item["volume"]:
                 row.update({"volume_ml": item["volume"], "volume_source_url": item["source"]})
             new_rows.append(row)
-            save_image(session, brand, item)
+            save_image(session, brand, name, item["variant"], item["img"])
             print(f"[메뉴] 새 음료 추가: {brand} · {name} ({item['variant']})")
+    try:
+        backfill_photos(session, existing, found)
+    except Exception as exc:
+        print("사진 채우기 건너뜀:", exc)
     if not new_rows:
         print("[메뉴] 새로 추가할 음료 없음")
         return
