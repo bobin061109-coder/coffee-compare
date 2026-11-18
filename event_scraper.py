@@ -48,7 +48,8 @@ def is_detail_link(kind, parsed):
         return "/post_news/" in path and path.rsplit("/", 1)[-1] not in ("", "event")
     if kind == "mega":
         params = parse_qs(parsed.query)
-        if "/bbs/detail/" in path or "/bbs/board" in path:
+        if path.startswith("/bbs/detail") or "/bbs/board" in path:
+
             return True
         return any(key in params and params[key] for key in DETAIL_KEYS)
     return False
