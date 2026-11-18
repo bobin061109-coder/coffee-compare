@@ -1,0 +1,76 @@
+import streamlit as st
+import pandas as pd
+import requests
+import datetime
+import urllib.parse
+
+st.set_page_config(
+    page_title="건강기반 추천",
+    page_icon="☕",
+    layout="wide"
+)
+
+st.title("☕ 건강기반 추천")
+st.markdown("개인정보 수집에 동의하고 본인의 스마트워치(Google Fit)를 연동하면, 실시간 생체 데이터를 바탕으로 지금 딱 맞는 음료를 자동으로 추천해 드립니다.")
+
+# 1. Google OAuth 2.0 환경 설정 (Streamlit Secrets에서 로드)
+CLIENT_ID = st.secrets.get("GOOGLE_CLIENT_ID", "") if hasattr(st, "secrets") else ""
+CLIENT_SECRET = st.secrets.get("GOOGLE_CLIENT_SECRET", "") if hasattr(st, "secrets") else ""
+REDIRECT_URI = st.secrets.get("REDIRECT_URI", "http://localhost:8501") if hasattr(st, "secrets") else "http://localhost:8501"
+
+SCOPES = [
+    "https://www.googleapis.com/auth/fitness.heart_rate.read",
+    "https://www.googleapis.com/auth/fitness.activity.read",
+    "https://www.googleapis.com/auth/fitness.sleep.read"
+]
+
+if "user_access_token" not in st.session_state:
+    st.session_state.user_access_token = None
+if "privacy_agreed" not in st.session_state:
+    st.session_state.privacy_agreed = False
+
+# OAuth 리다이렉트 콜백 처리
+query_params = st.query_params
+if "code" in query_params and st.session_state.user_access_token is None:
+    auth_code = query_params["code"]
+    if CLIENT_ID and CLIENT_SECRET:
+        token_url = "https://oauth2.googleapis.com/token"
+        token_data = {
+            "code": auth_code,
+            "client_id": CLIENT_ID,
+            "client_secret": CLIENT_SECRET,
+            "redirect_uri": REDIRECT_URI,
+            "grant_type": "authorization_code"
+        }
+        res = requests.post(token_url, data=token_data, timeout=10)
+        if res.status_code == 200:
+            st.session_state.user_access_token = res.json().get("access_token")
+            st.session_state.privacy_agreed = True
+            st.query_params.clear()
+            st.rerun()
+        else:
+            st.error(f"인증 토큰 발급 실패: {res.text}")
+
+# 2. 개인정보 동의 및 연동 UI
+if st.session_state.user_access_token is None:
+    st.subheader("🔒 개인정보 및 건강 데이터 수집·이용 동의")
+    with st.container(border=True):
+        st.markdown("""
+        **1. 목적**: 사용자 맞춤형 카페인 한도 산출 및 음료 추천  
+        **2. 항목**: 스마트워치 연동 생체 데이터 (심박수, 걸음 수, 수면 시간)  
+        **3. 기간**: 세션 종료 시 즉시 파기 (서버에 영구 저장하지 않음)  
+        """)
+        agreed = st.checkbox("위 개인정보 및 건강정보 수집·이용에 동의합니다. (필수)")
+        st.session_state.privacy_agreed = agreed
+
+    if st.session_state.privacy_agreed:
+        if CLIENT_ID and CLIENT_SECRET:
+            params = {
+                "client_id": CLIENT_ID,
+                "redirect_uri": REDIRECT_URI,
+                "response_type": "code",
+                "scope": " ".join(SCOPES),
+                "access_type": "offline",
+                "prompt": "consent"
+            }
+            auth_url = f"
