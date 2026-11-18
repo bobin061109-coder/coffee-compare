@@ -355,12 +355,18 @@ PHOTO_ALIASES = {
 
 
 def loose_match(brand, name, variant, found):
+    item = match_item(brand, name, variant, found)
+    return item["img"] if item else None
+
+
+def match_item(brand, name, variant, found):
+    """우리 메뉴 이름에 해당하는 공식 메뉴(사진·카페인 등 포함)를 찾습니다."""
     alias = PHOTO_ALIASES.get((brand, name))
     if alias:
         items = [i for i in found.get(brand, []) if i["img"] and loose(i["name"]) == loose(alias)]
         pick = [i for i in items if i["variant"] == variant] or items
         if pick:
-            return pick[0]["img"]
+            return pick[0]
     return _loose_match_all(brand, name, variant, found)
 
 
@@ -386,7 +392,7 @@ def _loose_match(brand, name, variant, found):
         if len(names) != 1:  # 후보가 여러 개면 틀릴 수 있으니 포기
             return None
     pick = [i for i in same if i["variant"] == variant] or same
-    return pick[0]["img"]
+    return pick[0]
 
 
 def backfill_photos(session, existing, found):
@@ -430,7 +436,7 @@ def enrich_existing(existing, found):
             continue
         exact = [i for i in items if norm(i["name"]) == norm(r["menu_name"])]
         pick = [i for i in exact if i["variant"] == r["variant"]] or exact
-        item = pick[0] if pick else by_img.get(loose_match(r["brand"], r["menu_name"], r["variant"], found) or "")
+        item = pick[0] if pick else match_item(r["brand"], r["menu_name"], r["variant"], found)
         if not item:
             continue
         for k, v in enrich_fields(item).items():
