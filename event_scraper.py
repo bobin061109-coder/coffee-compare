@@ -168,7 +168,8 @@ IMG_DIR = ROOT / "images"
 MENU_COLUMNS = ["brand", "menu_name", "variant", "data_verified", "verified_at",
                 "menu_source_url", "price_krw", "price_source_url", "volume_ml",
                 "volume_source_url", "rating", "rating_scale", "rating_source_url",
-                "taste", "taste_source_url", "review", "review_source_url"]
+                "taste", "taste_source_url", "review", "review_source_url",
+                "caffeine_mg", "kcal", "released_at"]  # 공식 페이지의 카페인·열량, 공식 사진 올린 날짜
 PAIK_DRINK_PAGES = [  # 디저트 페이지(menu_dessert)는 넣지 않음
     "https://paikdabang.com/menu/menu_new/",
     "https://paikdabang.com/menu/menu_coffee/",
@@ -195,6 +196,15 @@ def split_variant(name):
     return clean(name[:m.start()]), variant
 
 
+def nutrition(text):
+    """공식 메뉴 설명에서 카페인(mg)과 열량(kcal)을 찾습니다. 없으면 빈칸."""
+    caf = (re.search(r"카페인\s*\(mg\)\s*:?\s*([\d.]+)", text)
+           or re.search(r"카페인\s*:?\s*([\d.]+)\s*mg", text))
+    kcal = (re.search(r"(?:칼로리|열량)\s*\(kcal\)\s*:?\s*([\d.]+)", text)
+            or re.search(r"([\d.]+)\s*kcal", text))
+    return (caf.group(1) if caf else ""), (kcal.group(1) if kcal else "")
+
+
 def parse_paik(html, url):
     soup = BeautifulSoup(html, "html.parser")
     items = []
@@ -218,7 +228,9 @@ def parse_paik(html, url):
             print(f"  [음료 아님으로 제외] {clean(h3.get_text(' ', strip=True))} ({url.rsplit('/', 2)[-2]})")
             continue
         name, variant = split_variant(h3.get_text(" ", strip=True))
+        caf, kcal = nutrition(text)
         items.append({"name": name, "variant": variant, "volume": cup.group(1).replace(",", ""),
+                      "caffeine": caf, "kcal": kcal,
                       "img": urljoin(url, img["src"]), "source": url, "price": ""})
     return items
 
@@ -240,9 +252,11 @@ def parse_mega(html):
             tags = re.findall(r"\b(HOT|ICE)\b", text)
             if len(set(tags)) == 1:
                 variant = tags[0]
-        vol = re.search(r"(\d+)\s*oz", text, re.IGNORECASE)
+        cup = re.search(r"컵용량\s*:?\s*([\d,.]+)\s*ml", text, re.IGNORECASE)
+        caf, kcal = nutrition(text)
         items.append({"name": name, "variant": variant,
-                      "volume": str(round(int(vol.group(1)) * 29.5735)) if vol else "",
+                      "volume": cup.group(1).replace(",", "") if cup else "",
+                      "caffeine": caf, "kcal": kcal,
                       "img": urljoin("https://www.mega-mgccoffee.com/", img.get("src") or ""),
                       "source": MEGA_SOURCE, "price": ""})
     return items
@@ -396,6 +410,36 @@ def backfill_photos(session, existing, found):
     print(f"[사진] 기존 메뉴 사진 {added}개 채움")
 
 
+def enrich_fields(item):
+    released = image_date(item.get("img", ""))
+    return {"caffeine_mg": item.get("caffeine", ""), "kcal": item.get("kcal", ""),
+            "released_at": released.strftime("%Y-%m-%d") if released else ""}
+
+
+def enrich_existing(existing, found):
+    """기존 메뉴에 공식 카페인·열량·출시(사진) 날짜를 채웁니다. 바뀐 줄 수를 돌려줍니다."""
+    by_img = {}
+    for brand, items in found.items():
+        for i in items:
+            if i.get("img"):
+                by_img.setdefault(i["img"], i)
+    changed = 0
+    for r in existing:
+        items = found.get(r["brand"])
+        if not items:
+            continue
+        exact = [i for i in items if norm(i["name"]) == norm(r["menu_name"])]
+        pick = [i for i in exact if i["variant"] == r["variant"]] or exact
+        item = pick[0] if pick else by_img.get(loose_match(r["brand"], r["menu_name"], r["variant"], found) or "")
+        if not item:
+            continue
+        for k, v in enrich_fields(item).items():
+            if v and r.get(k, "") != v:
+                r[k] = v
+                changed += 1
+    return changed
+
+
 def update_menus(session):
     try:
         with MENU_CSV.open(encoding="utf-8-sig", newline="") as f:
@@ -486,6 +530,7 @@ def update_menus(session):
                         "menu_source_url": item["source"]})
             if item["volume"]:
                 row.update({"volume_ml": item["volume"], "volume_source_url": item["source"]})
+            row.update(enrich_fields(item))
             new_rows.append(row)
             save_image(session, brand, name, item["variant"], item["img"])
             print(f"[메뉴] 새 음료 추가: {brand} · {name} ({item['variant']})")
@@ -517,7 +562,9 @@ def update_menus(session):
             removed = [r for r in removed if r["brand"] != brand]
     for r in removed:
         print(f"[메뉴] 공식 사이트에 없어 뺌: {r['brand']} · {r['menu_name']} ({r['variant']})")
-    if not (new_rows or removed or renamed):
+    enriched = enrich_existing(keep, found)
+    print(f"[메뉴] 카페인·열량·출시일 채움: {enriched}칸")
+    if not (new_rows or removed or renamed or enriched):
         print("[메뉴] 바뀐 메뉴 없음")
         return
     order = {id(r): i for i, r in enumerate(existing)}
