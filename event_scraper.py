@@ -303,6 +303,36 @@ def save_image(session, brand, name, variant, url):
         return False
 
 
+def loose(text):
+    """띄어쓰기·괄호·기호를 빼고 비교 (예: '녹차 빽스치노(베이직)' == '녹차빽스치노 베이직')."""
+    return re.sub(r"[^0-9a-z가-힣]", "", str(text or "").casefold())
+
+
+def loose_match(brand, name, variant, found):
+    """이름 표기가 조금 다른 경우를 맞춥니다. 확실할 때만 사진을 돌려줍니다."""
+    url = _loose_match(brand, name, variant, found)
+    if url is None and "(" in name:  # '녹차 빽스치노(베이직)' → '녹차 빽스치노'
+        url = _loose_match(brand, re.sub(r"\(.*?\)", "", name), variant, found)
+    return url
+
+
+def _loose_match(brand, name, variant, found):
+    target = loose(name)
+    if len(target) < 3:
+        return None
+    items = [i for i in found.get(brand, []) if i["img"]]
+    same = [i for i in items if loose(i["name"]) == target or loose(i["name"] + i["variant"]) == target + loose(variant)]
+    if not same:
+        # '블랙벨벳 라떼' → '챔피언스 블랙 벨벳 라떼'처럼 공식 이름 안에 그대로 들어 있는 경우 (디카페인·스몰 제외)
+        same = [i for i in items if target in loose(i["name"])
+                and not re.search(r"디카페인|스몰", i["name"]) and not re.search(r"디카페인|스몰", name)]
+        names = {loose(i["name"]) for i in same}
+        if len(names) != 1:  # 후보가 여러 개면 틀릴 수 있으니 포기
+            return None
+    pick = [i for i in same if i["variant"] == variant] or same
+    return pick[0]["img"]
+
+
 def backfill_photos(session, existing, found):
     """이미 있는 메뉴 중 사진이 없는 것에 공식 사진을 채웁니다."""
     exact, by_name = {}, {}
@@ -316,7 +346,8 @@ def backfill_photos(session, existing, found):
         brand, name, variant = row["brand"], row["menu_name"], row["variant"]
         if brand not in found or has_photo(brand, name, variant):
             continue
-        url = exact.get((brand, norm(name), variant)) or by_name.get((brand, norm(name)))
+        url = (exact.get((brand, norm(name), variant)) or by_name.get((brand, norm(name)))
+               or loose_match(brand, name, variant, found))
         if url and save_image(session, brand, name, variant, url):
             added += 1
             time.sleep(0.3)
