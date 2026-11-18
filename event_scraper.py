@@ -12,11 +12,15 @@ from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "data" / "events.csv"
-SOURCES = {
-    "컴포즈커피": ("https://composecoffee.com/event", "compose"),
-    "메가MGC커피": ("https://www.mega-mgccoffee.com/bbs/?bbs_category=3", "mega"),
-    "빽다방": ("https://paikdabang.com/news/?cate=event", "paik"),
-}
+NEW_MENU = r"신메뉴|출시|신제품|NEW|시즌\s*메뉴|한정\s*메뉴"
+# (브랜드, 주소, 종류, 제목 필터) — 한 브랜드에서 여러 페이지를 읽을 수 있습니다.
+# 제목 필터가 있으면 그 단어가 들어간 게시물만 가져옵니다.
+SOURCES = [
+    ("컴포즈커피", "https://composecoffee.com/event", "compose", None),
+    ("메가MGC커피", "https://www.mega-mgccoffee.com/bbs/?bbs_category=3", "mega", None),
+    ("빽다방", "https://paikdabang.com/news/?cate=event", "paik", None),
+    ("빽다방", "https://paikdabang.com/news/", "paik", NEW_MENU),  # 전체 소식 중 신메뉴 글만
+]
 FIELDS = ["id", "brand", "title", "snippet", "url", "checked_at"]
 # 일부 공식 사이트는 일반 브라우저가 아닌 요청(User-Agent)을 차단합니다.
 # 실제 브라우저와 유사한 헤더를 보내 차단 가능성을 줄입니다.
@@ -112,23 +116,34 @@ def main():
     warnings = []
     session = requests.Session()
     session.headers.update(HEADERS)
-    for index, (brand, (url, kind)) in enumerate(SOURCES.items()):
+    collected = {}  # 브랜드별로 이번에 새로 찾은 게시물
+    for index, (brand, url, kind, title_filter) in enumerate(SOURCES):
         if index:
             time.sleep(2)
         try:
             response = session.get(url, timeout=30)
             response.raise_for_status()
             items = parse_page(brand, kind, url, response.text)
+            if title_filter:
+                items = [i for i in items if re.search(title_filter, i["title"], re.IGNORECASE)]
+                print(f"  {brand} 소식 중 신메뉴 글 {len(items)}개")
+                if not items:
+                    continue  # 신메뉴 글이 없을 수도 있으니 경고하지 않음
             if not items:
-                warnings.append(f"{brand}: 상세 링크를 찾지 못함(사이트 구조 변경 또는 차단 가능)")
+                warnings.append(f"{brand} ({url}): 상세 링크를 찾지 못함(사이트 구조 변경 또는 차단 가능)")
                 continue
-            latest = {key: row for key, row in latest.items() if row.get("brand") != brand}
+            bucket = collected.setdefault(brand, {})
             for item in items:
-                item["checked_at"] = now
-                latest[item["id"]] = item
-            print(f"{brand}: {len(items)}개 게시물 확인")
+                bucket.setdefault(item["id"], item)
         except requests.RequestException as exc:
-            warnings.append(f"{brand}: 요청 실패: {exc}")
+            warnings.append(f"{brand} ({url}): 요청 실패: {exc}")
+    # 새로 찾은 브랜드만 목록을 교체하고, 실패한 브랜드는 예전 목록을 그대로 둡니다.
+    for brand, bucket in collected.items():
+        latest = {key: row for key, row in latest.items() if row.get("brand") != brand}
+        for item in bucket.values():
+            item["checked_at"] = now
+            latest[item["id"]] = item
+        print(f"{brand}: {len(bucket)}개 게시물 확인")
     rows = sorted(latest.values(), key=lambda r: r.get("checked_at", ""), reverse=True)[:300]
     with OUT.open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=FIELDS)
