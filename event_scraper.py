@@ -212,6 +212,7 @@ def parse_paik(html, url):
         text = box.get_text(" ", strip=True)
         cup = re.search(r"컵용량\s*:?\s*([\d,.]+)\s*ml", text, re.IGNORECASE)
         if not cup:  # 컵용량이 없으면 음료가 아님(디저트 등)
+            print(f"  [음료 아님으로 제외] {clean(h3.get_text(' ', strip=True))} ({url.rsplit('/', 2)[-2]})")
             continue
         name, variant = split_variant(h3.get_text(" ", strip=True))
         items.append({"name": name, "variant": variant, "volume": cup.group(1).replace(",", ""),
@@ -352,6 +353,17 @@ def backfill_photos(session, existing, found):
             added += 1
             time.sleep(0.3)
     print(f"[사진] 기존 메뉴 사진 {added}개 채움")
+    # 이름이 달라 못 맞춘 메뉴를 고치기 위한 진단: 공식 이름 전체 + 비슷한 후보
+    import difflib
+    for brand, items in found.items():
+        official = sorted({f"{i['name']}|{i['variant']}" for i in items})
+        print(f"[공식이름] {brand} {len(official)}개: {official}")
+        names = sorted({i["name"] for i in items})
+        for row in existing:
+            if row["brand"] != brand or has_photo(brand, row["menu_name"], row["variant"]):
+                continue
+            close = difflib.get_close_matches(row["menu_name"], names, n=3, cutoff=0.4)
+            print(f"[사진없음] {brand} | {row['menu_name']} | {row['variant']} → 비슷한 공식 이름: {close}")
 
 
 def update_menus(session):
