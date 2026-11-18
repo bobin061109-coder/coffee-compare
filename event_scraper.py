@@ -185,6 +185,9 @@ def norm(text):
 
 
 def split_variant(name):
+    pre = re.match(r"\s*\((HOT|ICED?|ICE)\)\s*", name, re.IGNORECASE)
+    if pre:  # 메가 '(HOT)헛개리카노' 처럼 앞에 붙은 경우
+        return clean(name[pre.end():]), "HOT" if pre.group(1).upper() == "HOT" else "ICE"
     m = re.search(r"\(?\b(HOT|ICED?|ICE)\b\)?\s*$", name, re.IGNORECASE)
     if not m:
         return clean(name), "전체"
@@ -306,10 +309,37 @@ def save_image(session, brand, name, variant, url):
 
 def loose(text):
     """띄어쓰기·괄호·기호를 빼고 비교 (예: '녹차 빽스치노(베이직)' == '녹차빽스치노 베이직')."""
-    return re.sub(r"[^0-9a-z가-힣]", "", str(text or "").casefold())
+    text = str(text or "").casefold().replace("베이직", "basic").replace("소프트", "soft")
+    return re.sub(r"[^0-9a-z가-힣]", "", text)
+
+
+# 우리 데이터 이름 → 공식 사이트 이름 (공식 메뉴 목록을 보고 확실한 것만 짝지음)
+PHOTO_ALIASES = {
+    ("빽다방", "아샷추(아이스티+샷추가)"): "아이스티샷추가(아샷추)",
+    ("빽다방", "아이스티"): "복숭아 아이스티",
+    ("빽다방", "디카페인 연유라떼"): "디카페인 달달연유라떼",
+    ("빽다방", "미숫가루 두유"): "미숫가루",
+    ("빽다방", "미숫가루 물"): "미숫가루",
+    ("빽다방", "미숫가루 우유"): "미숫가루",
+    ("빽다방", "피스타치오정글 빽스치노(베이직)"): "피스타치오 빽스치노(BASIC)",
+    ("빽다방", "피스타치오정글 빽스치노(소프트)"): "피스타치오 빽스치노(SOFT)",
+    ("메가MGC커피", "콜드브루"): "콜드브루오리지널",
+    ("메가MGC커피", "디카페인 콜드브루"): "콜드브루디카페인",
+    ("메가MGC커피", "디카페인 콜드브루라떼"): "콜드브루디카페인라떼",
+}
 
 
 def loose_match(brand, name, variant, found):
+    alias = PHOTO_ALIASES.get((brand, name))
+    if alias:
+        items = [i for i in found.get(brand, []) if i["img"] and loose(i["name"]) == loose(alias)]
+        pick = [i for i in items if i["variant"] == variant] or items
+        if pick:
+            return pick[0]["img"]
+    return _loose_match_all(brand, name, variant, found)
+
+
+def _loose_match_all(brand, name, variant, found):
     """이름 표기가 조금 다른 경우를 맞춥니다. 확실할 때만 사진을 돌려줍니다."""
     url = _loose_match(brand, name, variant, found)
     if url is None and "(" in name:  # '녹차 빽스치노(베이직)' → '녹차 빽스치노'
@@ -356,8 +386,6 @@ def backfill_photos(session, existing, found):
     # 이름이 달라 못 맞춘 메뉴를 고치기 위한 진단: 공식 이름 전체 + 비슷한 후보
     import difflib
     for brand, items in found.items():
-        official = sorted({f"{i['name']}|{i['variant']}" for i in items})
-        print(f"[공식이름] {brand} {len(official)}개: {official}")
         names = sorted({i["name"] for i in items})
         for row in existing:
             if row["brand"] != brand or has_photo(brand, row["menu_name"], row["variant"]):
