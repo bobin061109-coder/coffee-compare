@@ -153,59 +153,199 @@ def main():
     for warning in warnings:
         print("경고:", warning)
     try:
-        diagnose_menus(session)
-    except Exception as exc:
-        print("메뉴 진단 건너뜀:", exc)
+        update_menus(session)
+    except Exception as exc:  # 메뉴 추가가 실패해도 이벤트 수집은 유지
+        print("메뉴 추가 건너뜀:", exc)
     if not any(row.get("checked_at") == now for row in rows):
         raise SystemExit("새 공식 게시물을 하나도 확인하지 못했습니다. GitHub Actions 로그를 확인하세요.")
 
 
-# ===== 메뉴 자동 추가 준비: 메뉴 페이지 구조 확인용 2차 (데이터는 바꾸지 않음) =====
-def _show(label, text, limit=3000):
-    print(f"  [{label}] {clean(text)[:limit]}")
+# ===== 새 음료 메뉴 자동 추가 =====
+# 공식 사이트 음료 메뉴만 읽어서 data/menus.csv에 없는 음료를 추가합니다. (디저트·푸드 제외)
+# 기존 줄은 절대 수정·삭제하지 않습니다. 가격이 공식 페이지에 없으면 비워 둡니다(앱에서 '확인 자료 없음').
+MENU_CSV = ROOT / "data" / "menus.csv"
+IMG_DIR = ROOT / "images"
+MENU_COLUMNS = ["brand", "menu_name", "variant", "data_verified", "verified_at",
+                "menu_source_url", "price_krw", "price_source_url", "volume_ml",
+                "volume_source_url", "rating", "rating_scale", "rating_source_url",
+                "taste", "taste_source_url", "review", "review_source_url"]
+PAIK_DRINK_PAGES = [  # 디저트 페이지(menu_dessert)는 넣지 않음
+    "https://paikdabang.com/menu/menu_new/",
+    "https://paikdabang.com/menu/menu_coffee/",
+    "https://paikdabang.com/menu/menu_drink/",
+    "https://paikdabang.com/menu/menu_ccino/",
+]
+MEGA_DRINK_LIST = ("https://www.mega-mgccoffee.com/menu/menu.php?page={page}&menu_category1=1"
+                   "&menu_category2=1&category=&list_checkbox_all=all")  # category1=1 → 음료
+MEGA_SOURCE = "https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1"
 
 
-def diagnose_menus(session):
-    jobs = [
-        ("mega", "https://www.mega-mgccoffee.com/menu/?menu_category1=1&menu_category2=1"),
-        ("paik", "https://paikdabang.com/menu/menu_new/"),
-        ("olma", "https://www.olmanama.com/brand_110"),
-        ("olma", "https://www.olmanama.com/brand_104"),
-    ]
-    for kind, url in jobs:
+def norm(text):
+    return re.sub(r"\s+", "", str(text or "")).casefold()
+
+
+def split_variant(name):
+    m = re.search(r"\(?\b(HOT|ICED?|ICE)\b\)?\s*$", name, re.IGNORECASE)
+    if not m:
+        return clean(name), "전체"
+    variant = "HOT" if m.group(1).upper() == "HOT" else "ICE"
+    return clean(name[:m.start()]), variant
+
+
+def parse_paik(html, url):
+    soup = BeautifulSoup(html, "html.parser")
+    items = []
+    for h3 in soup.find_all("h3"):
+        box = h3
+        for _ in range(6):
+            if box.parent is None:
+                break
+            box = box.parent
+            img = box.find("img", src=re.compile(r"/uploads/"))
+            if img:
+                break
+        else:
+            continue
+        img = box.find("img", src=re.compile(r"/uploads/"))
+        if not img:
+            continue
+        text = box.get_text(" ", strip=True)
+        cup = re.search(r"컵용량\s*:?\s*([\d,.]+)\s*ml", text, re.IGNORECASE)
+        if not cup:  # 컵용량이 없으면 음료가 아님(디저트 등)
+            continue
+        name, variant = split_variant(h3.get_text(" ", strip=True))
+        items.append({"name": name, "variant": variant, "volume": cup.group(1).replace(",", ""),
+                      "img": urljoin(url, img["src"]), "source": url, "price": ""})
+    return items
+
+
+def parse_mega(html):
+    soup = BeautifulSoup(html, "html.parser")
+    items = []
+    for li in soup.find_all("li"):
+        img = li.find("img")
+        if not img:
+            continue
+        title = li.find(class_=re.compile(r"cont_text_title")) or li.find("b")
+        if not title:
+            continue
+        raw = clean(title.get_text(" ", strip=True))
+        text = li.get_text(" ", strip=True)
+        name, variant = split_variant(raw)
+        if variant == "전체":
+            tags = re.findall(r"\b(HOT|ICE)\b", text)
+            if len(set(tags)) == 1:
+                variant = tags[0]
+        vol = re.search(r"(\d+)\s*oz", text, re.IGNORECASE)
+        items.append({"name": name, "variant": variant,
+                      "volume": str(round(int(vol.group(1)) * 29.5735)) if vol else "",
+                      "img": urljoin("https://www.mega-mgccoffee.com/", img.get("src") or ""),
+                      "source": MEGA_SOURCE, "price": ""})
+    return items
+
+
+def save_image(session, brand, item):
+    url = item["img"]
+    ext = urlparse(url).path.rsplit(".", 1)[-1].lower()
+    if ext not in ("jpg", "jpeg", "png", "webp"):
+        return
+    path = IMG_DIR / f"{brand}_{item['name']}_{item['variant']}.{ext}"
+    if path.exists():
+        return
+    try:
+        r = session.get(url, timeout=30)
+        r.raise_for_status()
+        if 0 < len(r.content) < 3_000_000:
+            IMG_DIR.mkdir(exist_ok=True)
+            path.write_bytes(r.content)
+    except requests.RequestException as exc:
+        print(f"  사진 저장 실패 {url}: {exc}")
+
+
+def update_menus(session):
+    try:
+        with MENU_CSV.open(encoding="utf-8-sig", newline="") as f:
+            existing = list(csv.DictReader(f))
+    except (OSError, csv.Error, UnicodeError) as exc:
+        print("메뉴 CSV를 읽지 못해 메뉴 추가를 건너뜀:", exc)
+        return
+    known = {(r["brand"], norm(r["menu_name"]), r["variant"]) for r in existing}
+    known_names = {(r["brand"], norm(r["menu_name"])) for r in existing}
+    found = {"빽다방": [], "메가MGC커피": []}
+
+    for url in PAIK_DRINK_PAGES:
         time.sleep(2)
         try:
             r = session.get(url, timeout=30)
+            r.raise_for_status()
             r.encoding = "utf-8"
-            html = r.text
-            print(f"[메뉴진단2] {url} → {r.status_code}, {len(html)}자")
-            soup = BeautifulSoup(html, "html.parser")
-            if kind == "mega":
-                for m in list(re.finditer(r"menu\.php", html))[:4]:
-                    _show("menu.php 주변", html[max(0, m.start() - 700): m.end() + 900], 1700)
-                for form in soup.find_all("form")[:3]:
-                    _show("form", str(form), 1500)
-            elif kind == "paik":
-                img = next((i for i in soup.find_all("img") if "/uploads/" in (i.get("src") or "")), None)
-                if img:
-                    node = img
-                    for _ in range(4):
-                        node = node.parent or node
-                    _show("메뉴 1개 HTML", str(node), 3000)
-            else:
-                text = clean(soup.get_text(" ", strip=True))
-                prices = re.findall(r"[^\s]{1,12}(?:\s[^\s]{1,12}){0,3}\s*[\d,]{3,6}\s*원", text)
-                print(f"  가격 패턴 {len(prices)}개 예시: {prices[:25]}")
-                idx = html.find("원<")
-                if idx < 0:
-                    idx = html.find("원")
-                _show("가격 주변 HTML", html[max(0, idx - 1500): idx + 1500], 3000)
-                tables = soup.find_all("table")
-                print(f"  table {len(tables)}개")
-                if tables:
-                    _show("첫 table", str(tables[0]), 2000)
-        except Exception as exc:  # 진단 실패는 수집에 영향 없음
-            print(f"[메뉴진단2] {url} 실패: {exc}")
+            items = parse_paik(r.text, url)
+            print(f"[메뉴] 빽다방 {url}: 음료 {len(items)}개")
+            found["빽다방"] += items
+        except requests.RequestException as exc:
+            print(f"[메뉴] 빽다방 {url} 실패: {exc}")
+
+    for page in range(1, 16):
+        time.sleep(2)
+        try:
+            r = session.get(MEGA_DRINK_LIST.format(page=page), timeout=30,
+                            headers={"Referer": MEGA_SOURCE, "X-Requested-With": "XMLHttpRequest"})
+            r.raise_for_status()
+            r.encoding = "utf-8"
+            if page == 1:
+                lis = [li for li in BeautifulSoup(r.text, "html.parser").find_all("li") if li.find("img")]
+                print(f"[메뉴진단] 메가 1쪽 {len(r.text)}자, 사진 있는 li {len(lis)}개")
+                for li in lis[:2]:
+                    print("  [메가 메뉴 HTML]", clean(str(li))[:1500])
+            items = parse_mega(r.text)
+            if not items:
+                break
+            print(f"[메뉴] 메가 {page}쪽: 음료 {len(items)}개")
+            found["메가MGC커피"] += items
+        except requests.RequestException as exc:
+            print(f"[메뉴] 메가 {page}쪽 실패: {exc}")
+            break
+
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    new_rows = []
+    for brand, items in found.items():
+        names = {norm(i["name"]) for i in items}
+        overlap = len({n for b, n in known_names if b == brand} & names)
+        # 안전장치: 기존 메뉴와 3개 이상 겹치지 않으면 읽기가 잘못된 것으로 보고 추가하지 않음
+        if overlap < 3:
+            print(f"[메뉴] {brand}: 기존 메뉴와 겹치는 이름이 {overlap}개뿐이라 이번엔 추가하지 않음 (예시: {[i['name'] for i in items[:8]]})")
+            continue
+        fresh = []
+        for item in items:
+            name = item["name"]
+            if not (2 <= len(name) <= 40) or not re.search(r"[가-힣]", name):
+                continue
+            key = (brand, norm(name), item["variant"])
+            if key in known:
+                continue
+            known.add(key)
+            fresh.append(item)
+        # 안전장치: 한 번에 너무 많으면 이름 표기가 달라 기존 메뉴를 새 메뉴로 착각한 것일 수 있음
+        if len(fresh) > 30:
+            print(f"[메뉴] {brand}: 새 음료가 {len(fresh)}개나 돼서 이번엔 추가하지 않음 (예시: {[i['name'] + ' ' + i['variant'] for i in fresh[:40]]})")
+            continue
+        for item in fresh:
+            name = item["name"]
+            row = {c: "" for c in MENU_COLUMNS}
+            row.update({"brand": brand, "menu_name": name, "variant": item["variant"],
+                        "data_verified": "True", "verified_at": today,
+                        "menu_source_url": item["source"]})
+            if item["volume"]:
+                row.update({"volume_ml": item["volume"], "volume_source_url": item["source"]})
+            new_rows.append(row)
+            save_image(session, brand, item)
+            print(f"[메뉴] 새 음료 추가: {brand} · {name} ({item['variant']})")
+    if not new_rows:
+        print("[메뉴] 새로 추가할 음료 없음")
+        return
+    with MENU_CSV.open("a", encoding="utf-8", newline="") as f:
+        csv.DictWriter(f, fieldnames=MENU_COLUMNS).writerows(new_rows)
+    print(f"[메뉴] 총 {len(new_rows)}개 추가")
 
 if __name__ == "__main__":
     main()
