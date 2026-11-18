@@ -3,3 +3,4 @@ pandas
 streamlit-autorefresh
 requests
 beautifulsoup4
+openpyxl
