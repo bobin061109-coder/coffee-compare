@@ -111,7 +111,7 @@ STALE_DAYS = 2  # 이 기간 넘게 새로 확인이 안 되면 경고
 
 # 칸(탭)별 키워드. 제목에 하나라도 들어 있으면 그 칸에 표시합니다.
 CATEGORIES = {
-    "💸 할인": [r"할인", r"반값", r"\d+\s*%", r"\d[\d,]*\s*원에", r"1천원", r"프로모션", r"특가", r"\d[\d,]*원\s*프로모션"],
+    "💸 할인": [r"할인", r"반값", r"\d+\s*%", r"\d[\d,]*\s*원에", r"\d+\s*천\s*원에", r"특가", r"\d[\d,]*\s*원\s*프로모션"],
     "🎟️ 쿠폰·적립": [r"쿠폰", r"적립", r"프리퀀시", r"증정", r"경품", r"스탬프", r"리워드"],
     "🤝 콜라보": [r"콜라보", r"[가-힣A-Za-z0-9\]]\s*[xX×]\s*[가-힣A-Za-z\[]", r"\[[^\]]*\|[^\]]*\]"],
     "🆕 신메뉴": [r"신메뉴", r"출시", r"신제품", r"NEW", r"시즌\s*메뉴", r"한정\s*메뉴"],
@@ -170,7 +170,8 @@ def event_status(title, today):
         return f"⛔ 만료 ({end.month}/{end.day} 종료)", "red"
     if end:
         return f"✅ 진행중 ({end.month}/{end.day}까지)", "green"
-    return "✅ 진행중 (종료일 미표기)", "green"
+    # 시작일만 있고 종료일이 없으면 진행중이라고 단정하지 않습니다.
+    return f"❔ {start.month}/{start.day} 시작 · 종료일 원문 확인", "gray"
 
 
 def matches(title, patterns):
