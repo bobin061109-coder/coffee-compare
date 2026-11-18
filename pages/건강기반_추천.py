@@ -16,10 +16,7 @@ import streamlit as st
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-try:
-    from core import load_data
-except Exception:  # core.py가 없어도 추천 문구는 보여줌
-    load_data = None
+from menudata import load_menus, menu_card  # noqa: E402
 
 st.set_page_config(page_title="건강기반 추천", page_icon="☕", layout="wide")
 KST = datetime.timezone(datetime.timedelta(hours=9))
@@ -234,12 +231,6 @@ def analyze(h: dict) -> dict:
             "limit": "100 ~ 150 mg"}
 
 
-KIND_KEYWORDS = {
-    "decaf_tea": r"디카페인|캐모마일|루이보스|페퍼민트|민트티|유자|레몬티|자몽티|매실",
-    "decaf": r"디카페인",
-    "latte": r"^카페라떼$|^바닐라라떼$|^바닐라 라떼$",
-    "americano": r"^아메리카노$",
-}
 
 rec = analyze(health)
 
@@ -254,25 +245,40 @@ st.subheader("🎯 지금 추천 메뉴")
 box = {"warning": st.warning, "error": st.error, "success": st.success}.get(rec["status"], st.info)
 box(f"**{rec['menu']}**\n\n{rec['reason']}")
 
-# 실제 판매 메뉴에서 골라 보여주기
-if load_data is not None:
-    rows, _ = load_data(ROOT / "data" / "menus.csv")
-    pat = re.compile(KIND_KEYWORDS[rec["kind"]])
-    picks = [r for r in rows if pat.search(str(r["menu_name"]))]
-    if picks:
-        st.markdown("**이 브랜드들에서 고르면?**")
-        seen, shown = set(), []
-        for r in picks:
-            key = (r["brand"], r["menu_name"])
-            if key in seen:
-                continue
-            seen.add(key)
-            shown.append(r)
-        cols = st.columns(3)
-        for i, r in enumerate(shown[:9]):
-            price = f"{int(r['price_krw']):,}원" if r.get("price_krw") else "가격 확인 자료 없음"
-            cols[i % 3].markdown(f"☕ **{r['brand']}** · {r['menu_name']}  \n<small>{price}</small>",
-                                 unsafe_allow_html=True)
+# 실제 판매 메뉴 중 카페인 양이 맞는 음료를 종류별로 골고루 보여주기
+CAFFEINE_RANGE = {          # (최소, 최대) mg — 공식 사이트에 적힌 카페인 기준
+    "decaf_tea": (0, 15),   # 디카페인·차·주스
+    "decaf": (0, 50),
+    "latte": (100, 220),
+    "americano": (100, 200),
+}
+lo, hi = CAFFEINE_RANGE[rec["kind"]]
+st.markdown(f"**☕ 카페인 {lo}~{hi}mg 사이 음료 중에서 골라봤어요**")
+rows = [r for r in load_menus() if r["caffeine"] is not None and lo <= r["caffeine"] <= hi
+        and not re.search(r"빽사이즈|왕메가|메가리카노", r["menu_name"])]
+temp = st.radio("온도", ["상관없음", "HOT", "ICE"], horizontal=True, key="temp")
+if temp != "상관없음":
+    rows = [r for r in rows if r.get("variant") in (temp, "전체")]
+if not rows:
+    st.info("조건에 맞는 음료를 찾지 못했어요.")
+else:
+    mid = (lo + hi) / 2
+    tabs = st.tabs(BRANDS_WITH_DATA := [b for b in ("메가MGC커피", "빽다방") if any(r["brand"] == b for r in rows)])
+    for tab, brand in zip(tabs, BRANDS_WITH_DATA):
+        with tab:
+            # 같은 음료의 HOT/ICE는 하나만, 카페인이 범위 가운데에 가까운 순
+            best = {}
+            for r in sorted((r for r in rows if r["brand"] == brand), key=lambda r: abs(r["caffeine"] - mid)):
+                best.setdefault(r["menu_name"], r)
+            picks = list(best.values())[:8]
+            cols = st.columns(4)
+            for k, r in enumerate(picks):
+                with cols[k % 4]:
+                    menu_card(st, r)
+            if len(best) > 8:
+                with st.expander(f"더 보기 ({len(best) - 8}개)"):
+                    st.write(" · ".join(f"{n} ({best[n]['caffeine']:g}mg)" for n in list(best)[8:]))
+    st.caption("카페인은 공식 사이트 표기 기준이에요. 컴포즈커피는 공식 카페인 정보가 없어 빠져 있어요.")
 
 if not health["timeline"].empty:
     st.subheader("📊 심박수 추이")
