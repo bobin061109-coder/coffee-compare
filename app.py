@@ -13,7 +13,7 @@ import streamlit as st
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
-BRANDS = ["컴포즈커피", "메가MGC커피", "우지커피", "빽다방"]
+BRANDS = ["컴포즈커피", "메가MGC커피", "빽다방"]
 MENU_COLUMNS = [
     "brand", "menu_name", "variant", "data_verified", "verified_at",
     "menu_source_url", "price_krw", "price_source_url", "volume_ml",
@@ -105,7 +105,7 @@ def metric_sort_value(row, key):
 
 
 st.title("☕ 저가커피 메뉴 비교")
-st.caption("컴포즈커피 · 메가MGC커피 · 우지커피 · 빽다방")
+st.caption("컴포즈커피 · 메가MGC커피 · 빽다방")
 st.info("출처와 확인일이 있는 값만 표시합니다. 확인되지 않은 가격·평점·리뷰는 임의로 만들지 않습니다.")
 menu_tab, event_tab = st.tabs(["🔎 메뉴 비교", "📣 브랜드 이벤트"])
 
