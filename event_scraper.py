@@ -313,6 +313,12 @@ def loose(text):
     return re.sub(r"[^0-9a-z가-힣]", "", text)
 
 
+# 메뉴 이름 자체를 바로잡을 것 (CSV에 반영됨)
+MENU_RENAMES = {
+    ("빽다방", "녹차 빽스치노(베이직)"): "말차 빽스치노(베이직)",
+    ("빽다방", "녹차 빽스치노(소프트)"): "말차 빽스치노(소프트)",
+}
+
 # 우리 데이터 이름 → 공식 사이트 이름 (공식 메뉴 목록을 보고 확실한 것만 짝지음)
 PHOTO_ALIASES = {
     ("빽다방", "아샷추(아이스티+샷추가)"): "아이스티샷추가(아샷추)",
@@ -383,15 +389,6 @@ def backfill_photos(session, existing, found):
             added += 1
             time.sleep(0.3)
     print(f"[사진] 기존 메뉴 사진 {added}개 채움")
-    # 이름이 달라 못 맞춘 메뉴를 고치기 위한 진단: 공식 이름 전체 + 비슷한 후보
-    import difflib
-    for brand, items in found.items():
-        names = sorted({i["name"] for i in items})
-        for row in existing:
-            if row["brand"] != brand or has_photo(brand, row["menu_name"], row["variant"]):
-                continue
-            close = difflib.get_close_matches(row["menu_name"], names, n=3, cutoff=0.4)
-            print(f"[사진없음] {brand} | {row['menu_name']} | {row['variant']} → 비슷한 공식 이름: {close}")
 
 
 def update_menus(session):
@@ -401,6 +398,12 @@ def update_menus(session):
     except (OSError, csv.Error, UnicodeError) as exc:
         print("메뉴 CSV를 읽지 못해 메뉴 추가를 건너뜀:", exc)
         return
+    renamed = 0
+    for r in existing:  # 공식 이름으로 바로잡기 (예: 빽다방엔 '녹차' 빽스치노가 없고 '말차'만 있음)
+        for (brand, old_name), new_name in MENU_RENAMES.items():
+            if r["brand"] == brand and r["menu_name"] == old_name:
+                r["menu_name"] = new_name
+                renamed += 1
     known = {(r["brand"], norm(r["menu_name"]), r["variant"]) for r in existing}
     known_names = {(r["brand"], norm(r["menu_name"])) for r in existing}
     found = {"빽다방": [], "메가MGC커피": []}
@@ -479,12 +482,40 @@ def update_menus(session):
         backfill_photos(session, existing, found)
     except Exception as exc:
         print("사진 채우기 건너뜀:", exc)
-    if not new_rows:
-        print("[메뉴] 새로 추가할 음료 없음")
+    # 공식 사이트에서 사라진 음료(단종·계절 종료)는 목록에서 뺍니다. 컴포즈는 확인할 수 없어 그대로 둡니다.
+    removed = []
+    keep = []
+    for r in existing:
+        brand = r["brand"]
+        items = found.get(brand)
+        if not items:
+            keep.append(r)
+            continue
+        names = {norm(i["name"]) for i in items}
+        if norm(r["menu_name"]) in names or loose_match(brand, r["menu_name"], r["variant"], found):
+            keep.append(r)
+        else:
+            removed.append(r)
+    for brand in found:
+        total = sum(1 for r in existing if r["brand"] == brand)
+        gone = [r for r in removed if r["brand"] == brand]
+        # 안전장치: 한 브랜드의 40% 넘게 사라지면 공식 사이트를 잘못 읽은 것으로 보고 빼지 않음
+        if total and len(gone) > total * 0.4:
+            print(f"[메뉴] {brand}: {len(gone)}/{total}개가 없다고 나와서 이번엔 빼지 않음")
+            keep += gone
+            removed = [r for r in removed if r["brand"] != brand]
+    for r in removed:
+        print(f"[메뉴] 공식 사이트에 없어 뺌: {r['brand']} · {r['menu_name']} ({r['variant']})")
+    if not (new_rows or removed or renamed):
+        print("[메뉴] 바뀐 메뉴 없음")
         return
-    with MENU_CSV.open("a", encoding="utf-8", newline="") as f:
-        csv.DictWriter(f, fieldnames=MENU_COLUMNS).writerows(new_rows)
-    print(f"[메뉴] 총 {len(new_rows)}개 추가")
+    order = {id(r): i for i, r in enumerate(existing)}
+    keep.sort(key=lambda r: order[id(r)])
+    with MENU_CSV.open("w", encoding="utf-8-sig", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=MENU_COLUMNS, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(keep + new_rows)
+    print(f"[메뉴] 추가 {len(new_rows)}개 · 뺌 {len(removed)}개 · 이름 고침 {renamed}개")
 
 if __name__ == "__main__":
     main()
