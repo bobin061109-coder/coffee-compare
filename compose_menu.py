@@ -10,8 +10,8 @@
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
-IMG_DIR = BASE_DIR / "assets" / "compose"
-PLACEHOLDER = BASE_DIR / "assets" / "placeholder.png"
+IMG_DIR = BASE_DIR
+PLACEHOLDER = BASE_DIR / "placeholder.png"
 
 # (id, 공식 메뉴명, 카테고리)  ← id 가 곧 이미지 파일명(assets/compose/{id}.png)
 _RAW = [
