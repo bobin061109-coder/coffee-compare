@@ -223,6 +223,14 @@ def parse_paik(html, url):
         if not img:
             continue
         text = box.get_text(" ", strip=True)
+        if len(box.find_all("h3")) > 1:
+            # 상자 안에 메뉴가 여러 개면 다른 메뉴의 카페인을 읽지 않도록 이 메뉴 설명만 사용
+            own = h3.parent
+            while own is not None and own is not box and not re.search(r"카페인|컵용량", own.get_text(" ", strip=True)):
+                own = own.parent
+            if own is None or own is box:
+                continue
+            text = own.get_text(" ", strip=True)
         cup = re.search(r"컵용량\s*:?\s*([\d,.]+)\s*ml", text, re.IGNORECASE)
         if not cup:  # 컵용량이 없으면 음료가 아님(디저트 등)
             print(f"  [음료 아님으로 제외] {clean(h3.get_text(' ', strip=True))} ({url.rsplit('/', 2)[-2]})")
