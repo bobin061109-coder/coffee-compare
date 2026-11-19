@@ -71,19 +71,36 @@ def find_col(df, *patterns):
     return None
 
 
+def heart_col(df):
+    """심박수 열 고르기: 심박변이도(HRV)는 빼고, 평균(avg) 열을 먼저, 없으면 안정시 심박수."""
+    cols = [c for c in df.columns
+            if re.search(r"심박|heart.?rate|^bpm$", c, re.IGNORECASE)
+            and not re.search(r"variab|변이|hrv", c, re.IGNORECASE)]
+    if not cols:
+        return None
+
+    def rank(c):
+        low = c.casefold()
+        resting = bool(re.search(r"rest|안정", low))
+        avg = bool(re.search(r"avg|average|mean|평균", low))
+        minmax = bool(re.search(r"\bmin|\bmax|최소|최대", low))
+        return (resting, not avg, minmax)
+    return sorted(cols, key=rank)[0]
+
+
 def to_time(series):
     return pd.to_datetime(series, errors="coerce")
 
 
 def extract(df: pd.DataFrame) -> dict:
     """올린 파일에서 심박수·걸음 수·수면 시간을 찾아냅니다. 못 찾은 값은 None."""
-    out = {"heart_rate": None, "steps": None, "sleep_hours": None, "timeline": pd.DataFrame()}
+    out = {"heart_rate": None, "steps": None, "sleep_hours": None, "resting_hr": None, "timeline": pd.DataFrame()}
     if df.empty:
         return out
     time_col = find_col(df, r"^시간$|^날짜$|start_time|create_time|day_time|date|time")
 
     # 간단한 양식: 시간, 심박수, 걸음수, 수면시간
-    hr_col = find_col(df, r"심박", r"heart_rate$", r"\.heart_rate$", r"heart.?rate", r"^bpm$")
+    hr_col = heart_col(df)
     if hr_col is not None:
         hr = pd.to_numeric(df[hr_col], errors="coerce")
         valid = df.assign(_hr=hr).dropna(subset=["_hr"])
@@ -96,6 +113,15 @@ def extract(df: pd.DataFrame) -> dict:
                     out["timeline"] = pd.DataFrame({"시간": tl["_t"].dt.strftime("%m/%d %H:%M"),
                                                     "심박수 (bpm)": tl["_hr"].round(1)})
             out["heart_rate"] = round(float(valid["_hr"].iloc[-1]), 1)
+
+    rest_cols = [c for c in df.columns if re.search(r"rest|안정", c, re.IGNORECASE)
+                 and re.search(r"heart|심박", c, re.IGNORECASE)]
+    rest_cols.sort(key=lambda c: not re.search(r"avg|평균", c, re.IGNORECASE))
+    if rest_cols:
+        rv = pd.to_numeric(df[rest_cols[0]], errors="coerce").dropna()
+        rv = rv[(rv > 30) & (rv < 150)]
+        if not rv.empty:
+            out["resting_hr"] = round(float(rv.iloc[-1]), 1)
 
     step_col = find_col(df, r"걸음", r"step_count", r"^steps?$", r"count$")
     if step_col is not None and (hr_col is None or step_col != hr_col):
@@ -152,8 +178,8 @@ def load_sheet(sid: str):
     return pd.read_excel(io.BytesIO(r.content), sheet_name=None)
 
 
-health = {"heart_rate": None, "steps": None, "sleep_hours": None, "timeline": pd.DataFrame()}
-tab_auto, tab_file = st.tabs(["⌚ 워치 자동 연동", "📁 파일로 올리기 (예비)"])
+health = {"heart_rate": None, "steps": None, "sleep_hours": None, "resting_hr": None, "timeline": pd.DataFrame()}
+tab_auto, tab_file, tab_demo = st.tabs(["⌚ 워치 자동 연동", "📁 파일로 올리기 (예비)", "🎬 예시로 체험 (발표용)"])
 
 with tab_auto:
     saved = st.query_params.get("sheet", "")
@@ -173,7 +199,7 @@ with tab_auto:
             for name, df in sheets.items():
                 df.columns = [str(c).strip() for c in df.columns]
                 got = extract(df)
-                for k in ("heart_rate", "steps", "sleep_hours"):
+                for k in ("heart_rate", "steps", "sleep_hours", "resting_hr"):
                     if got[k] is not None:
                         health[k] = got[k]
                 if not got["timeline"].empty:
@@ -193,92 +219,184 @@ with tab_file:
     files = st.file_uploader("CSV 파일", type=["csv"], accept_multiple_files=True)
     for f in files or []:
         got = extract(read_any_csv(f.getvalue()))
-        for k in ("heart_rate", "steps", "sleep_hours"):
+        for k in ("heart_rate", "steps", "sleep_hours", "resting_hr"):
             if got[k] is not None:
                 health[k] = got[k]
         if not got["timeline"].empty:
             health["timeline"] = got["timeline"]
 
+DEMOS = {  # 이름: (심박수, 수면시간, 걸음수, 시각)
+    "😵 밤샘 다음 날 아침": (74, 3.5, 1500, 9),
+    "🥱 조금 못 잔 오후": (72, 5.5, 4000, 15),
+    "😴 푹 잔 날": (66, 8.0, 5000, 10),
+    "💓 심박수가 높은 날": (102, 6.5, 4000, 11),
+    "🏃 만 보 넘게 걸은 날": (80, 6.5, 12000, 17),
+    "🌙 밤 10시 야식 타임": (70, 6.0, 7000, 22),
+}
+demo_hour = None
+with tab_demo:
+    st.caption("실제 워치 데이터 없이, 상황별로 추천이 어떻게 바뀌는지 보여줘요.")
+    pick = st.radio("상황 고르기", ["사용 안 함"] + list(DEMOS), key="demo")
+    if pick != "사용 안 함":
+        hr_d, sleep_d, steps_d, demo_hour = DEMOS[pick]
+        health = {"heart_rate": hr_d, "sleep_hours": sleep_d, "steps": steps_d, "resting_hr": 65,
+                  "timeline": pd.DataFrame()}
+
+if demo_hour is not None:
+    st.warning(f"🎬 **예시 데이터로 보는 중이에요** ({pick}, {demo_hour}시 기준). 실제 워치 데이터가 아니에요.")
+
 if all(health[k] is None for k in ("heart_rate", "steps", "sleep_hours")):
-    st.info("워치 데이터가 연결되면 여기에 추천이 나타나요.")
+    st.info("워치 데이터가 연결되면 여기에 추천이 나타나요. 먼저 둘러보려면 '🎬 예시로 체험' 탭을 눌러보세요.")
     st.stop()
+if demo_hour is None and health["heart_rate"] is None:
+    st.caption("💓 심박수는 지금 연동 앱(Health Data Export)이 시트로 내보내지 못해서, 걸음 수·수면·시간대로 추천해요.")
 
 
 # ---------------------------------------------------------------
-# 4. 추천 로직 (원래 로직 유지)
+# 4. 추천 로직: 수면·시간·심박수·걸음 수로 '이번 한 잔'의 카페인 범위를 정함
 # ---------------------------------------------------------------
-def analyze(h: dict) -> dict:
-    now_hour = datetime.datetime.now(KST).hour
-    hr, sleep, steps = h["heart_rate"], h["sleep_hours"], h["steps"] or 0
-    if now_hour >= 18 or (sleep is not None and sleep < 6.0 and now_hour >= 15):
-        return {"status": "warning", "kind": "decaf_tea",
-                "menu": "디카페인 커피 / 허브티",
-                "reason": "수면이 부족하거나 늦은 시간이에요. 지금 카페인을 마시면 오늘 밤 잠을 방해할 수 있어요.",
-                "limit": "0 mg (카페인 쉬어가기)"}
-    if hr is not None and hr >= 85:
-        return {"status": "error", "kind": "decaf",
-                "menu": "디카페인 커피",
-                "reason": f"지금 심박수가 {hr} bpm으로 조금 높아요. 카페인을 더하면 가슴 두근거림이 심해질 수 있어요.",
-                "limit": "최대 50 mg 이하"}
-    if steps >= 7000:
-        return {"status": "success", "kind": "latte",
-                "menu": "카페라떼 / 바닐라라떼",
-                "reason": f"오늘 {steps:,}보나 걸으셨네요! 우유와 약간의 당분이 있는 라떼가 잘 어울려요.",
-                "limit": "150 ~ 200 mg"}
-    return {"status": "info", "kind": "americano",
-            "menu": "아메리카노",
-            "reason": "컨디션이 안정적이에요. 깔끔한 아메리카노로 집중력을 챙겨보세요.",
-            "limit": "100 ~ 150 mg"}
+SINGLE_MAX = 200   # 한 번에 마실 카페인 상한 (EFSA: 성인 1회 200mg까지 안전)
+SLEEP_OK = 50      # 잘 때 몸에 남아도 괜찮은 정도 (참고 기준)
+HALF_LIFE = 5.0    # 카페인 반감기, 성인 평균 약 5시간 (사람마다 3~7시간)
+
+with st.expander("⚙️ 잘 시간 설정 (기본 밤 12시)"):
+    bed_hour = st.slider("보통 몇 시에 자요?", 21, 27, 24, format="%d시",
+                         help="25시 = 새벽 1시") 
 
 
+def plan(h, hour):
+    """요인별로 카페인 상한을 줄여가며 최종 범위를 정합니다. (요인 설명 목록, 최소, 최대, 열량 상한, 선호 종류)"""
+    factors, cap, floor, kcal_cap, prefer = [], SINGLE_MAX, 0, None, None
+    sleep, hr, rest, steps = h["sleep_hours"], h["heart_rate"], h.get("resting_hr"), h["steps"]
 
-rec = analyze(health)
+    # 1) 수면: 충분히 잤으면 카페인이 필요 없어요
+    if sleep is None:
+        factors.append(("😶", "수면", "기록 없음", "수면 기록이 없어서 수면은 빼고 계산했어요."))
+    elif sleep >= 7:
+        cap = min(cap, 15)
+        factors.append(("😴", "수면", f"{sleep:g}시간 · 충분", "푹 잤으니 카페인 없이도 괜찮은 날이에요. 맛있는 논카페인 음료를 추천해요."))
+    elif sleep >= 6:
+        cap = min(cap, 120)
+        factors.append(("🙂", "수면", f"{sleep:g}시간 · 조금 부족", "가볍게 한 잔(120mg 이하)이면 충분해요."))
+    elif sleep >= 5:
+        cap, floor = min(cap, 180), 60
+        factors.append(("🥱", "수면", f"{sleep:g}시간 · 부족", "적당한 카페인(60~180mg)이 집중에 도움이 돼요."))
+    else:
+        cap, floor = min(cap, SINGLE_MAX), 100
+        factors.append(("😵", "수면", f"{sleep:g}시간 · 많이 부족", "카페인이 도움은 되지만 한 번에 200mg은 넘기지 마세요. 20분 낮잠이 더 효과적일 수 있어요."))
+
+    # 2) 잘 시간까지 남은 시간: 잘 때 50mg 아래로 빠질 만큼만
+    left = bed_hour - hour
+    if left <= 4:
+        cap = min(cap, 15)
+        factors.append(("🌙", "시간", f"잘 시간까지 {max(left, 0)}시간", "곧 잘 시간이라 카페인은 쉬어가요."))
+    else:
+        by_time = int(SLEEP_OK * 2 ** (left / HALF_LIFE))
+        if by_time < cap:
+            cap = by_time
+            factors.append(("⏰", "시간", f"잘 시간까지 {left}시간", f"지금 {by_time}mg 넘게 마시면 잘 때까지 다 안 빠져요."))
+        else:
+            factors.append(("⏰", "시간", f"잘 시간까지 {left}시간", "아직 여유 있는 시간이에요."))
+
+    # 3) 심박수: 이미 빠르면 카페인을 줄여요
+    if hr is None:
+        factors.append(("💓", "심박수", "기록 없음", "심박수 기록이 없어서 심박수는 빼고 계산했어요."))
+    elif hr >= 100:
+        cap = min(cap, 15)
+        factors.append(("💓", "심박수", f"{hr:g} bpm · 빠름", "심장이 이미 빨리 뛰고 있어요. 카페인은 두근거림을 더 키울 수 있어요."))
+    elif hr >= 90:
+        cap = min(cap, 50)
+        factors.append(("💓", "심박수", f"{hr:g} bpm · 조금 빠름", "카페인을 50mg 이하로 줄였어요."))
+    elif rest is not None and hr - rest >= 20:
+        cap = int(cap * 0.5)
+        factors.append(("💓", "심박수", f"{hr:g} bpm (평소 {rest:g})", "평소보다 20 넘게 높아서 카페인을 절반으로 줄였어요."))
+    else:
+        factors.append(("💓", "심박수", f"{hr:g} bpm · 안정", "안정적이에요."))
+
+    # 4) 걸음 수: 많이 걸었으면 수분, 적게 걸었으면 가벼운 음료
+    if steps is None:
+        factors.append(("👟", "걸음 수", "기록 없음", "걸음 기록이 없어요."))
+    elif steps >= 10000:
+        prefer, kcal_cap = "drink", 400
+        factors.append(("🏃", "걸음 수", f"{steps:,}보 · 아주 많음", "땀을 많이 흘렸을 수 있어요. 수분 보충되는 에이드·주스·티를 먼저 보여줘요."))
+    elif steps >= 6000:
+        kcal_cap = 350
+        factors.append(("🚶", "걸음 수", f"{steps:,}보 · 활발", "충분히 움직였어요. 달달한 라떼도 괜찮아요."))
+    elif steps < 3000 and hour >= 14:
+        kcal_cap = 200
+        factors.append(("🛋️", "걸음 수", f"{steps:,}보 · 적음", "오늘 활동량이 적어서 200kcal 이하 가벼운 음료를 골랐어요. 산책 10분도 좋아요!"))
+    else:
+        kcal_cap = 300
+        factors.append(("🚶", "걸음 수", f"{steps:,}보 · 보통", "평범한 활동량이에요."))
+
+    if cap <= 15:
+        floor = 0
+    floor = min(floor, cap)
+    return factors, floor, cap, kcal_cap, prefer
+
+
+hour = datetime.datetime.now(KST).hour if demo_hour is None else demo_hour
+if hour < 5:
+    hour += 24  # 새벽은 '전날 밤'으로 계산
+factors, lo, hi, kcal_cap, prefer = plan(health, hour)
 
 st.divider()
-m1, m2, m3, m4 = st.columns(4)
-m1.metric("심박수", f"{health['heart_rate']} bpm" if health["heart_rate"] is not None else "기록 없음")
-m2.metric("수면 시간", f"{health['sleep_hours']} 시간" if health["sleep_hours"] is not None else "기록 없음")
-m3.metric("걸음 수", f"{int(health['steps']):,} 보" if health["steps"] is not None else "기록 없음")
-m4.metric("권장 카페인", rec["limit"])
+st.subheader("🧠 오늘 내 몸 상태로 계산했어요")
+cols = st.columns(len(factors))
+for col, (emoji, name, value, why) in zip(cols, factors):
+    with col:
+        with st.container(border=True):
+            st.markdown(f"**{emoji} {name}**  \n{value}")
+            st.caption(why)
 
-st.subheader("🎯 지금 추천 메뉴")
-box = {"warning": st.warning, "error": st.error, "success": st.success}.get(rec["status"], st.info)
-box(f"**{rec['menu']}**\n\n{rec['reason']}")
+if hi <= 15:
+    st.success("### 오늘은 **카페인 없는 음료** 추천! ☕❌\n디카페인·차·에이드·주스 중에서 골라봤어요.")
+elif lo > 0:
+    st.warning(f"### 이번 한 잔은 카페인 **{lo}~{hi}mg**\n졸음을 깨울 만큼만, 잘 때 방해되지 않을 만큼만 골랐어요.")
+else:
+    st.info(f"### 이번 한 잔은 카페인 **{hi}mg 이하**\n이 안에서 마시면 오늘 밤 잠에 큰 영향이 없어요.")
 
-# 실제 판매 메뉴 중 카페인 양이 맞는 음료를 종류별로 골고루 보여주기
-CAFFEINE_RANGE = {          # (최소, 최대) mg — 공식 사이트에 적힌 카페인 기준
-    "decaf_tea": (0, 15),   # 디카페인·차·주스
-    "decaf": (0, 50),
-    "latte": (100, 220),
-    "americano": (100, 200),
+# 실제 판매 음료에서 고르기 (공식 카페인 표기가 있는 메뉴만)
+GROUPS = {
+    "☕ 커피": r"아메리카노|리카노|에스프레소|콜드브루|커피|샷",
+    "🥛 라떼·달달": r"라떼|모카|마끼아또|마키아또|카푸치노|빽스치노|프라페|쉐이크|스무디|초코|밀크티",
+    "🍹 에이드·주스·티": r"에이드|주스|아이스티|티$|차$|소다|유자|레몬|자몽|캐모마일|루이보스|민트",
 }
-lo, hi = CAFFEINE_RANGE[rec["kind"]]
-st.markdown(f"**☕ 카페인 {lo}~{hi}mg 사이 음료 중에서 골라봤어요**")
 rows = [r for r in load_menus() if r["caffeine"] is not None and lo <= r["caffeine"] <= hi
-        and not re.search(r"빽사이즈|왕메가|메가리카노", r["menu_name"])]
+        and not re.search(r"빽사이즈|왕메가|메가리카노|ARIH", r["menu_name"])
+        and (kcal_cap is None or r["kcal_n"] is None or r["kcal_n"] <= kcal_cap)]
 temp = st.radio("온도", ["상관없음", "HOT", "ICE"], horizontal=True, key="temp")
 if temp != "상관없음":
     rows = [r for r in rows if r.get("variant") in (temp, "전체")]
-if not rows:
-    st.info("조건에 맞는 음료를 찾지 못했어요.")
+target = (lo + hi) / 2 if lo > 0 else (hi * 0.7 if hi > 15 else 0)  # 범위 안에서 너무 약하지도 세지도 않게
+best = {}
+for r in sorted(rows, key=lambda r: (abs(r["caffeine"] - target), r["kcal_n"] or 0)):
+    best.setdefault((r["brand"], r["menu_name"]), r)
+picks = list(best.values())
+order = list(GROUPS)
+if prefer == "drink":
+    order = ["🍹 에이드·주스·티", "🥛 라떼·달달", "☕ 커피"]
+if hi <= 15:
+    order = ["🍹 에이드·주스·티", "🥛 라떼·달달", "☕ 커피"]
+if not picks:
+    st.info("조건에 맞는 음료를 찾지 못했어요. 온도를 '상관없음'으로 바꿔보세요.")
 else:
-    mid = (lo + hi) / 2
-    tabs = st.tabs(BRANDS_WITH_DATA := [b for b in ("메가MGC커피", "빽다방") if any(r["brand"] == b for r in rows)])
-    for tab, brand in zip(tabs, BRANDS_WITH_DATA):
+    st.markdown("**🎯 조건에 맞는 음료** (카페인·열량은 공식 사이트 표기 기준)")
+    tabs = st.tabs(order)
+    for tab, g in zip(tabs, order):
         with tab:
-            # 같은 음료의 HOT/ICE는 하나만, 카페인이 범위 가운데에 가까운 순
-            best = {}
-            for r in sorted((r for r in rows if r["brand"] == brand), key=lambda r: abs(r["caffeine"] - mid)):
-                best.setdefault(r["menu_name"], r)
-            picks = list(best.values())[:8]
-            cols = st.columns(4)
-            for k, r in enumerate(picks):
-                with cols[k % 4]:
-                    menu_card(st, r)
-            if len(best) > 8:
-                with st.expander(f"더 보기 ({len(best) - 8}개)"):
-                    st.write(" · ".join(f"{n} ({best[n]['caffeine']:g}mg)" for n in list(best)[8:]))
-    st.caption("카페인은 공식 사이트 표기 기준이에요. 컴포즈커피는 공식 카페인 정보가 없어 빠져 있어요.")
+            pool = [r for r in picks if re.search(GROUPS[g], r["menu_name"])]
+            if not pool:
+                st.caption("이 종류에서는 조건에 맞는 음료가 없어요.")
+                continue
+            c = st.columns(4)
+            for k, r in enumerate(pool[:8]):
+                with c[k % 4]:
+                    menu_card(st, r, extra=f"{r['kcal_n']:g}kcal" if r["kcal_n"] is not None else "")
+            if len(pool) > 8:
+                with st.expander(f"더 보기 ({len(pool) - 8}개)"):
+                    st.write(" · ".join(f"{r['brand']} {r['menu_name']} ({r['caffeine']:g}mg)" for r in pool[8:]))
+    st.caption("컴포즈커피는 공식 카페인 정보가 없어 빠져 있어요. 하루 카페인은 성인 400mg 이하가 권고량이에요.")
 
 if not health["timeline"].empty:
     st.subheader("📊 심박수 추이")
