@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>캠퍼스 자동 기록</title>
+<style>
+:root{--bg:#faf8f5;--card:#fff;--tx:#2b2520;--sub:#7a6f66;--ac:#8b5a2b;--ln:#e8e1d9;--bar:#c8955a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1814;--card:#262019;--tx:#f0e9e1;--sub:#a89c90;--ac:#e0a468;--ln:#3a3229;--bar:#c8955a}}
+:root[data-theme="dark"]{--bg:#1c1814;--card:#262019;--tx:#f0e9e1;--sub:#a89c90;--ac:#e0a468;--ln:#3a3229;--bar:#c8955a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;line-height:1.5}
+main{max-width:640px;margin:0 auto;padding:16px}
+h1{font-size:20px;margin:8px 0 12px}
+.tabs{display:flex;gap:8px;margin-bottom:12px}
+.tabs button{flex:1;padding:10px;border:1px solid var(--ln);background:var(--card);color:var(--tx);border-radius:10px;font-size:14px;cursor:pointer}
+.tabs button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:14px;margin-bottom:12px}
+.sub{color:var(--sub);font-size:13px}
+.btn{padding:9px 14px;border:0;border-radius:9px;background:var(--ac);color:#fff;font-size:14px;cursor:pointer;margin:6px 6px 0 0}
+.btn.g{background:transparent;color:var(--ac);border:1px solid var(--ac)}
+.row{display:flex;align-items:center;gap:8px;margin:8px 0}
+.row .n{width:84px;font-size:13px;flex:none}
+.track{flex:1;height:16px;background:var(--ln);border-radius:8px;overflow:hidden}
+.fill{height:100%;background:var(--bar)}
+.row .v{width:70px;text-align:right;font-size:13px;flex:none}
+textarea{width:100%;box-sizing:border-box;min-height:120px;border:1px solid var(--ln);border-radius:10px;background:var(--bg);color:var(--tx);padding:10px;font-size:13px;font-family:inherit}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:7px 6px;border-bottom:1px solid var(--ln);text-align:left;white-space:nowrap}
+.stat{display:flex;gap:10px}.stat div{flex:1;background:var(--bg);border-radius:10px;padding:10px;text-align:center}
+.stat b{display:block;font-size:18px;color:var(--ac)}
+.hide{display:none}
+</style>
+</head>
+<body>
+<main>
+<h1>☕ 캠퍼스 자동 기록</h1>
+<div class="tabs">
+  <button id="t1" class="on">공부 장소 집중 패턴</button>
+  <button id="t2">커피 결제 자동 기록</button>
+</div>
+
+<section id="p1">
+  <div class="card">
+    <b>위치 기록 → 체류 구간 → 장소별 집계</b>
+    <p class="sub">실제 앱에서는 5분마다 수집되는 위치 좌표를 쓰고, 여기서는 하루치 위치 데이터를 시뮬레이션해요. 등록된 장소 반경 80m 안에 10분 이상 머물면 방문으로 인정해요.</p>
+    <button class="btn" id="gen">하루치 위치 데이터 생성</button>
+    <button class="btn g" id="clr1">초기화</button>
+  </div>
+  <div class="card" id="sum1"><span class="sub">위의 버튼을 눌러 데이터를 만들어 보세요.</span></div>
+  <div class="card scroll hide" id="stayCard"><b>감지된 체류 기록</b><table id="stays"></table></div>
+</section>
+
+<section id="p2" class="hide">
+  <div class="card">
+    <b>결제 알림 문자 붙여넣기 (한 줄에 한 건)</b>
+    <p class="sub">알림을 한 줄씩 읽어 가게 이름·금액·시간을 뽑고, 커피 가게만 골라 기록해요. 안드로이드 앱에서는 알림 접근 권한으로 같은 로직이 자동 실행돼요.</p>
+    <textarea id="inp"></textarea>
+    <button class="btn" id="parse">자동 기록하기</button>
+    <button class="btn g" id="sample">예시 불러오기</button>
+    <button class="btn g" id="clr2">기록 삭제</button>
+  </div>
+  <div class="card"><div class="stat" id="stat2"></div></div>
+  <div class="card scroll"><b>커피 구매 기록</b><table id="log"></table></div>
+</section>
+</main>
+
+<script>
+const PLACES=[
+ {n:"중앙도서관",la:37.2840,lo:127.0450,study:true},
+ {n:"카페(카공)",la:37.2852,lo:127.0468,study:true},
+ {n:"자취방",la:37.2810,lo:127.0420,study:true},
+ {n:"강의동",la:37.2845,lo:127.0435,study:false}
+];
+const dist=(a,b,c,d)=>Math.hypot((a-c)*111000,(b-d)*88400);
+const hm=m=>String(Math.floor(m/60)).padStart(2,"0")+":"+String(m%60).padStart(2,"0");
+const dur=m=>m>=60?Math.floor(m/60)+"시간 "+(m%60)+"분":m+"분";
+
+// 1) 위치 핑 생성(시뮬레이션)
+function genPings(){
+  const r=(a,b)=>a+Math.floor(Math.random()*(b-a));
+  const plan=[["자취방",0,r(480,540)],["강의동",r(550,570),r(700,730)],["중앙도서관",r(770,800),r(960,1020)],["카페(카공)",r(1040,1060),r(1130,1200)],["자취방",r(1230,1260),1440]];
+  const pings=[];
+  for(const [name,s,e] of plan){
+    const p=PLACES.find(x=>x.n===name);
+    for(let t=s;t<e;t+=5)pings.push({t,la:p.la+(Math.random()-.5)*.0004,lo:p.lo+(Math.random()-.5)*.0004});
+  }
+  return pings;
+}
+// 2) 핑 → 체류 구간
+function detectStays(pings){
+  const lab=pings.map(p=>{
+    let best=null,bd=1e9;
+    for(const pl of PLACES){const d=dist(p.la,p.lo,pl.la,pl.lo);if(d<bd){bd=d;best=pl}}
+    return {t:p.t,place:bd<=80?best:null};
+  });
+  const stays=[];let cur=null;
+  for(const x of lab){
+    if(cur&&x.place&&cur.place===x.place&&x.t-cur.end<=15){cur.end=x.t}
+    else{if(cur)stays.push(cur);cur=x.place?{place:x.place,start:x.t,end:x.t}:null}
+  }
+  if(cur)stays.push(cur);
+  return stays.map(s=>({...s,min:s.end-s.start+5})).filter(s=>s.min>=10);
+}
+function render1(stays){
+  const box=document.getElementById("sum1");
+  const agg={};
+  stays.forEach(s=>{const a=agg[s.place.n]||(agg[s.place.n]={min:0,cnt:0,place:s.place});a.min+=s.min;a.cnt++});
+  const study=Object.entries(agg).filter(([,a])=>a.place.study).sort((a,b)=>b[1].min-a[1].min);
+  if(!study.length){box.innerHTML='<span class="sub">감지된 체류가 없어요.</span>';return}
+  const max=study[0][1].min, top=study[0];
+  box.innerHTML='<b>오늘 장소별 체류 시간</b>'+study.map(([n,a])=>
+    `<div class="row"><span class="n">${n}</span><div class="track"><div class="fill" style="width:${a.min/max*100}%"></div></div><span class="v">${dur(a.min)}</span></div>`).join("")+
+    `<p class="sub">오늘은 <b>${top[0]}</b>에서 가장 오래 머물렀어요 (${top[1].cnt}회 방문). 며칠 쌓이면 요일·시간대별 집중 장소도 보여줄 수 있어요.</p>`;
+  document.getElementById("stayCard").classList.remove("hide");
+  document.getElementById("stays").innerHTML="<tr><th>장소</th><th>시작</th><th>종료</th><th>체류</th></tr>"+
+    stays.map(s=>`<tr><td>${s.place.n}</td><td>${hm(s.start)}</td><td>${hm(s.end+5)}</td><td>${dur(s.min)}</td></tr>`).join("");
+}
+
+// 3) 결제 알림 파서
+const COFFEE=["스타벅스","이디야","메가","컴포즈","투썸","빽다방","할리스","폴바셋","커피","카페","coffee","cafe","블루보틀","탐앤탐스","매머드","더벤티"];
+let LOG=[];
+try{LOG=JSON.parse(localStorage.getItem("coffeeLog")||"[]")}catch(e){}
+function save(){try{localStorage.setItem("coffeeLog",JSON.stringify(LOG))}catch(e){}}
+function parseLine(line){
+  const am=line.match(/([\d,]+)\s*원/); if(!am)return null;
+  const amount=parseInt(am[1].replace(/,/g,""),10);
+  const tm=line.match(/(\d{1,2}):(\d{2})/);
+  const dm=line.match(/(\d{1,2})\/(\d{1,2})/);
+  let m=line.replace(/\[[^\]]*\]/g,"").replace(/\(.*?\)/g,"").replace(am[0],"")
+    .replace(/승인|일시불|\d개월|할부|누적.*$|잔액.*$|체크카드|신용카드|\*\d+\*?/g,"")
+    .replace(/\d{1,2}\/\d{1,2}/,"").replace(/\d{1,2}:\d{2}/,"").replace(/\s+/g," ").trim();
+  return {merchant:m||"알 수 없음",amount,date:dm?dm[1]+"/"+dm[2]:"-",time:tm?tm[0]:"-"};
+}
+const isCoffee=m=>COFFEE.some(k=>m.toLowerCase().includes(k.toLowerCase()));
+function render2(){
+  const sum=LOG.reduce((a,b)=>a+b.amount,0);
+  document.getElementById("stat2").innerHTML=
+   `<div><b>${LOG.length}잔</b><span class="sub">누적 구매</span></div><div><b>${sum.toLocaleString()}원</b><span class="sub">총 지출</span></div><div><b>${LOG.length?Math.round(sum/LOG.length).toLocaleString():0}원</b><span class="sub">평균 단가</span></div>`;
+  document.getElementById("log").innerHTML=LOG.length?"<tr><th>날짜</th><th>시간</th><th>가게</th><th>금액</th></tr>"+
+   LOG.map(x=>`<tr><td>${x.date}</td><td>${x.time}</td><td>${x.merchant}</td><td>${x.amount.toLocaleString()}원</td></tr>`).join(""):'<tr><td class="sub">아직 기록이 없어요.</td></tr>';
+}
+const SAMPLE=`[삼성카드] 승인 4,500원 일시불 11/24 08:42 스타벅스수원아주대점
+[KB국민] 체크카드 승인 12,800원 11/24 12:15 학생식당
+[신한카드] 승인 2,000원 일시불 11/24 14:03 메가MGC커피 영통점
+[삼성카드] 승인 5,300원 일시불 11/24 17:21 이디야커피 아주대점
+[현대카드] 승인 31,000원 11/24 19:40 GS25 영통역점`;
+
+// 이벤트
+const $=id=>document.getElementById(id);
+$("t1").onclick=()=>{$("p1").classList.remove("hide");$("p2").classList.add("hide");$("t1").className="on";$("t2").className=""};
+$("t2").onclick=()=>{$("p2").classList.remove("hide");$("p1").classList.add("hide");$("t2").className="on";$("t1").className=""};
+$("gen").onclick=()=>render1(detectStays(genPings()));
+$("clr1").onclick=()=>{$("sum1").innerHTML='<span class="sub">위의 버튼을 눌러 데이터를 만들어 보세요.</span>';$("stayCard").classList.add("hide")};
+$("sample").onclick=()=>{$("inp").value=SAMPLE};
+$("parse").onclick=()=>{
+  $("inp").value.split("\n").forEach(l=>{
+    const p=parseLine(l); if(!p||!isCoffee(p.merchant))return;
+    if(!LOG.some(x=>x.date===p.date&&x.time===p.time&&x.amount===p.amount))LOG.push(p);
+  });
+  save();render2();
+};
+$("clr2").onclick=()=>{LOG=[];save();render2()};
+render2();
+</script>
+</body>
+</html>
